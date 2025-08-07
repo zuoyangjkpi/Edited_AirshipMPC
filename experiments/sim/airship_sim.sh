@@ -26,10 +26,10 @@ if [ -z "$NAME" ]; then
 fi
 
 if [ -z "$WORLD" ]; then
-   WORLD="arena_BLIMP"
+   WORLD="arena_BLIMP_stat_target"
 fi
 
-ROBOT_IDS="["
+ROBOT_IDS="["s
 HUMAN_INPUT="[1"
 
 Xs=( -15 -10 8 6 -4  0 4 -6 -8 10 15)
