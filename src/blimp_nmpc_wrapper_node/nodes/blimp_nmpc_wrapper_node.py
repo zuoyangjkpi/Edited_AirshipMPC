@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import math
-import rospy
+import rclpy
 from tf import transformations
 from geometry_msgs.msg import *
 from sensor_msgs.msg import *
@@ -396,7 +396,7 @@ windpub=None
 
 def param(s,default):
     if rospy.has_param(s):
-        return rospy.get_param(s)
+        return self.get_parameter(s).value
     return default
 
 
@@ -554,7 +554,7 @@ class MPC(object):
                 closestPoint(x["blimp"][self.selfid-1],u["blimp"][self.selfid-1],p["blimp"][self.selfid-1],target,W_blimp[self.selfid-1])
                 )
         trajectory=Marker()
-        trajectory.header.stamp=rospy.Time.now()
+        trajectory.header.stamp=self.get_clock().now().to_msg()
         trajectory.header.frame_id="world"
         trajectory.type=Marker.LINE_STRIP
         trajectory.color.a=1.0
@@ -595,7 +595,7 @@ class MPC(object):
             mo.ns="nmpsobstacles"
             mo.id=oid
             oid+=1
-            mo.header.stamp=rospy.Time.now()
+            mo.header.stamp=self.get_clock().now().to_msg()
             mo.header.frame_id="world"
             mo.type=Marker.CYLINDER
             mo.color.a=1.0
@@ -614,7 +614,7 @@ class MPC(object):
 
         wind=PointStamped()
         wind.header.frame_id="world"
-        wind.header.stamp=rospy.Time.now()
+        wind.header.stamp=self.get_clock().now().to_msg()
         wind.point.x=self.wind[0]
         wind.point.y=self.wind[1]
         wind.point.z=self.wind[2]
@@ -644,7 +644,7 @@ def OptimizationResultCallback(msg):
         return
 
     command=uav_pose()
-    command.header.stamp=rospy.Time.now()
+    command.header.stamp=self.get_clock().now().to_msg()
     command.header.frame_id="world"
     command.flightmode=4 #ROSBRIDGEMESSAGE_FLIGHTCONTROL_MODE_ROSCONTROL = 4
     command.position.x=newstate[3]
@@ -663,7 +663,7 @@ def OptimizationResultCallback(msg):
     commandpub.publish(command)
 
 if __name__ == '__main__':
-    rospy.init_node(NAME)
+    rclpy.init()
     NAME=rospy.get_name()
     SELF=param(NAME+"/robotID",SELF)
     MACHINES=param(NAME+"/numRobots",MACHINES)
@@ -684,5 +684,5 @@ if __name__ == '__main__':
     vispub = rospy.Publisher(VISTOPIC,Marker,queue_size=3)
     obspub = rospy.Publisher(OBSTOPIC,MarkerArray,queue_size=3)
     windpub = rospy.Publisher(WINDTOPIC,PointStamped,queue_size=3)
-    rospy.spin()
+    rclpy.spin(node)
     

@@ -1,29 +1,29 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.8)
 project(blimp_nmpc_wrapper_node)
+
+# Default to C++17
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 17)
+endif()
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
 
 ## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
+## if COMPONENTS list like find_package(ament_cmake REQUIRED)
+find_package(xyz REQUIRED)
+
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS
-  nmpc_blimp_formation_planner
-  uav_msgs
-)
+find_package(ament_cmake REQUIRED)
+find_package(nmpc_blimp_formation_planner REQUIRED)
+find_package(uav_msgs REQUIRED)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 
-
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
 ## See http://ros.org/doc/api/catkin/html/user_guide/setup_dot_py.html
-# catkin_python_setup()
-
-################################################
-## Declare ROS messages, services and actions ##
-################################################
 
 ## To declare and build messages, services or actions from within this
 ## package, follow these steps:
@@ -37,9 +37,11 @@ find_package(catkin REQUIRED COMPONENTS
 ##     * add a exec_depend tag for "message_runtime"
 ## * In this file (CMakeLists.txt):
 ##   * add "message_generation" and every package in MSG_DEP_SET to
-##     find_package(catkin REQUIRED COMPONENTS ...)
+##     find_package(ament_cmake REQUIRED)
+find_package(... REQUIRED)
+
 ##   * add "message_runtime" and every package in MSG_DEP_SET to
-##     catkin_package(CATKIN_DEPENDS ...)
+##     
 ##   * uncomment the add_*_files sections below as needed
 ##     and list every .msg/.srv/.action file to be processed
 ##   * uncomment the generate_messages entry below
@@ -82,7 +84,9 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add a build_depend and a exec_depend tag for "dynamic_reconfigure"
 ## * In this file (CMakeLists.txt):
 ##   * add "dynamic_reconfigure" to
-##     find_package(catkin REQUIRED COMPONENTS ...)
+##     find_package(ament_cmake REQUIRED)
+find_package(... REQUIRED)
+
 ##   * uncomment the "generate_dynamic_reconfigure_options" section below
 ##     and list every .cfg file to be processed
 
@@ -101,12 +105,6 @@ find_package(catkin REQUIRED COMPONENTS
 ## LIBRARIES: libraries you create in this project that dependent projects also need
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
-catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES blimp_nmpc_wrapper_node
-#  CATKIN_DEPENDS nmpc_blimp_formation_planner uav_msgs
-#  DEPENDS system_lib
-)
 
 ###########
 ## Build ##
@@ -207,3 +205,14 @@ catkin_install_python(PROGRAMS nodes/blimp_nmpc_wrapper_node.py
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+# Install Python modules
+ament_python_install_package(${PROJECT_NAME})
+
+# Install launch files
+install(DIRECTORY launch/
+  DESTINATION share/${PROJECT_NAME}/launch
+  FILES_MATCHING PATTERN "*.launch.py"
+)
+
+ament_package()

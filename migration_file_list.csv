@@ -1,0 +1,104 @@
+文件路径,文件类型,修改优先级,修改内容,状态
+./src/blimp_nmpc_wrapper_node/package.xml,package.xml,高,更新到ROS2格式(format=3),待修改
+./src/blimp_nmpc_wrapper_node/CMakeLists.txt,CMakeLists.txt,高,更新到ament_cmake格式,待修改
+./src/blimp_nmpc_wrapper_node/launch/one_blimp.launch,launch文件,高,转换为Python launch文件,待修改
+./src/blimp_nmpc_wrapper_node/nodes/blimp_nmpc_wrapper_node.py,Python源码,高,更新ROS2 Python API,待修改
+./src/blimp_nmpc_wrapper_node/nodes/formation_config.py,Python源码,中,检查并更新ROS相关代码,待修改
+./src/blimps_costtest.py,Python源码,中,检查并更新ROS相关代码,待修改
+./src/blimps_ros.py,Python源码,高,更新ROS2 Python API,待修改
+./submodules/AirCap/packages/flight/camera_configs/package.xml,package.xml,高,更新到ROS2格式,待修改
+./submodules/AirCap/packages/flight/camera_configs/CMakeLists.txt,CMakeLists.txt,高,更新到ament_cmake格式,待修改
+./submodules/AirCap/packages/flight/camera_configs/launch/capture_logitech_b500.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/flight/camera_configs/launch/capture_logitech_c920.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/flight/camera_configs/launch/publish_info_basler.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/flight/camera_configs/launch/publish_info_gazebo.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/flight/camera_configs/launch/publish_info_ptgrey.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/flight/camera_configs/launch/publish_info_robot.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/flight/camera_configs/launch/video_stream_ptgrey.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/flight/camera_configs/src/CameraInfoPublisher.cpp,C++源码,高,更新ROS2 C++ API,待修改
+./submodules/AirCap/packages/flight/diff_gps/package.xml,package.xml,高,更新到ROS2格式,待修改
+./submodules/AirCap/packages/flight/diff_gps/CMakeLists.txt,CMakeLists.txt,高,更新到ament_cmake格式,待修改
+./submodules/AirCap/packages/flight/diff_gps/launch/diff_gps.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/flight/diff_gps/launch/target.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/flight/diff_gps/src/gps_serial.cpp,C++源码,高,更新ROS2 C++ API,待修改
+./submodules/AirCap/packages/flight/generic_potential_field/package.xml,package.xml,高,更新到ROS2格式,待修改
+./submodules/AirCap/packages/flight/generic_potential_field/CMakeLists.txt,CMakeLists.txt,高,更新到ament_cmake格式,待修改
+./submodules/AirCap/packages/flight/generic_potential_field/src/CoTanPotentialFunctions.cpp,C++源码,中,更新ROS2 C++ API,待修改
+./submodules/AirCap/packages/flight/generic_potential_field/src/PotentialFunction.cpp,C++源码,中,更新ROS2 C++ API,待修改
+./submodules/AirCap/packages/flight/generic_potential_field/src/TestCalculus.cpp,C++源码,中,更新ROS2 C++ API,待修改
+./submodules/AirCap/packages/flight/generic_potential_field/include/CoTanPotentialFunctions.hpp,C++头文件,中,更新ROS2 C++ API,待修改
+./submodules/AirCap/packages/flight/generic_potential_field/include/PotentialFunction.hpp,C++头文件,中,更新ROS2 C++ API,待修改
+./submodules/AirCap/packages/flight/generic_potential_field/include/PotentialFunctionImpl.hpp,C++头文件,中,更新ROS2 C++ API,待修改
+./submodules/AirCap/packages/flight/neural_network_detector/package.xml,package.xml,高,更新到ROS2格式,待修改
+./submodules/AirCap/packages/flight/neural_network_detector/CMakeLists.txt,CMakeLists.txt,高,更新到ament_cmake格式,待修改
+./submodules/AirCap/packages/flight/neural_network_detector/launch/one_robot.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/flight/neural_network_detector/launch/overlay.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp,C++源码,高,更新ROS2 C++ API,待修改
+./submodules/AirCap/packages/flight/neural_network_detector/src/Overlay.cpp,C++源码,高,更新ROS2 C++ API,待修改
+./submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_node.cpp,C++源码,高,更新ROS2 C++ API,待修改
+./submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/BoostTCPClient.h,C++头文件,中,更新ROS2 C++ API,待修改
+./submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h,C++头文件,高,更新ROS2 C++ API,待修改
+./submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h,C++头文件,高,更新ROS2 C++ API,待修改
+./submodules/AirCap/packages/flight/neural_network_detector/include/cv/extensions/projection.h,C++头文件,低,检查并更新ROS相关代码,待修改
+
+
+./submodules/AirCap/packages/flight/nmpc_planner/package.xml,package.xml,高,更新到ROS2格式,待修改
+./submodules/AirCap/packages/flight/nmpc_planner/CMakeLists.txt,CMakeLists.txt,高,更新到ament_cmake格式,待修改
+./submodules/AirCap/packages/flight/pose_cov_ops_interface/package.xml,package.xml,高,更新到ROS2格式,待修改
+./submodules/AirCap/packages/flight/pose_cov_ops_interface/CMakeLists.txt,CMakeLists.txt,高,更新到ament_cmake格式,待修改
+./submodules/AirCap/packages/flight/projection_models/model_distance_from_height/package.xml,package.xml,高,更新到ROS2格式,待修改
+./submodules/AirCap/packages/flight/projection_models/model_distance_from_height/CMakeLists.txt,CMakeLists.txt,高,更新到ament_cmake格式,待修改
+./submodules/AirCap/packages/flight/target_tracker_distributed_kf/package.xml,package.xml,高,更新到ROS2格式,待修改
+./submodules/AirCap/packages/flight/target_tracker_distributed_kf/CMakeLists.txt,CMakeLists.txt,高,更新到ament_cmake格式,待修改
+./submodules/AirCap/packages/flight/tf_from_uav_pose/package.xml,package.xml,高,更新到ROS2格式,待修改
+./submodules/AirCap/packages/flight/tf_from_uav_pose/CMakeLists.txt,CMakeLists.txt,高,更新到ament_cmake格式,待修改
+./submodules/AirCap/packages/optional/basler_image_capture/Grab/package.xml,package.xml,中,更新到ROS2格式,待修改
+./submodules/AirCap/packages/optional/basler_image_capture/Grab/CMakeLists.txt,CMakeLists.txt,中,更新到ament_cmake格式,待修改
+./submodules/AirCap/packages/optional/gcs_visualization/package.xml,package.xml,中,更新到ROS2格式,待修改
+./submodules/AirCap/packages/optional/gcs_visualization/setup.py,Python setup,中,更新到ROS2格式,待修改
+./submodules/AirCap/packages/optional/gcs_visualization/src/gcs_visualization/__init__.py,Python源码,中,更新ROS2 Python API,待修改
+./submodules/AirCap/packages/optional/gcs_visualization/src/gcs_visualization/robot.py,Python源码,中,更新ROS2 Python API,待修改
+./submodules/AirCap/packages/optional/gcs_visualization/src/gcs_visualization/world.py,Python源码,中,更新ROS2 Python API,待修改
+./submodules/AirCap/packages/optional/ptgrey_image_capture/Grab/package.xml,package.xml,中,更新到ROS2格式,待修改
+./submodules/AirCap/packages/optional/ptgrey_image_capture/Grab/CMakeLists.txt,CMakeLists.txt,中,更新到ament_cmake格式,待修改
+./submodules/AirCap/packages/replay/video_replay_only/Grab/package.xml,package.xml,中,更新到ROS2格式,待修改
+./submodules/AirCap/packages/replay/video_replay_only/Grab/CMakeLists.txt,CMakeLists.txt,中,更新到ament_cmake格式,待修改
+./submodules/AirCap/packages/simulation/Gazebo_Plugins/package.xml,package.xml,中,更新到ROS2格式,待修改
+./submodules/AirCap/packages/simulation/Gazebo_Plugins/CMakeLists.txt,CMakeLists.txt,中,更新到ament_cmake格式,待修改
+./submodules/AirCap/packages/simulation/aircap/package.xml,package.xml,中,更新到ROS2格式,待修改
+./submodules/AirCap/packages/simulation/aircap/CMakeLists.txt,CMakeLists.txt,中,更新到ament_cmake格式,待修改
+./submodules/AirCap/packages/simulation/aircap/launch/blimp_overlay.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/simulation/aircap/launch/recorded_overlay.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/simulation/aircap/launch/simulation.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/simulation/aircap/launch/simulation_blimp.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/simulation/fake_communication_failure/package.xml,package.xml,中,更新到ROS2格式,待修改
+./submodules/AirCap/packages/simulation/fake_communication_failure/CMakeLists.txt,CMakeLists.txt,中,更新到ament_cmake格式,待修改
+./submodules/AirCap/packages/simulation/fake_communication_failure/launch/default.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/simulation/librepilot_gazebo_bridge/package.xml,package.xml,中,更新到ROS2格式,待修改
+./submodules/AirCap/packages/simulation/librepilot_gazebo_bridge/CMakeLists.txt,CMakeLists.txt,中,更新到ament_cmake格式,待修改
+./submodules/AirCap/packages/simulation/librepilot_gazebo_bridge/launch/default.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/simulation/random_moving_target/package.xml,package.xml,中,更新到ROS2格式,待修改
+./submodules/AirCap/packages/simulation/random_moving_target/CMakeLists.txt,CMakeLists.txt,中,更新到ament_cmake格式,待修改
+./submodules/AirCap/packages/simulation/random_moving_target/launch/move_target_withID.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/simulation/random_moving_target/launch/publish_target.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/simulation/random_moving_target/launch/spawn_move_target_withID.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/simulation/random_moving_target/launch/spawn_target_withID.launch,launch文件,中,转换为Python launch文件,待修改
+./submodules/AirCap/packages/simulation/random_moving_target/src/move_robot_randomly.cpp,C++源码,中,更新ROS2 C++ API,待修改
+./submodules/AirCap/packages/simulation/random_moving_target/src/publish_target_robot_state.cpp,C++源码,中,更新ROS2 C++ API,待修改
+./submodules/AirCap/packages/simulation/random_moving_target/src/random_walk.py,Python源码,中,更新ROS2 Python API,待修改
+./submodules/AirCap/packages/simulation/random_moving_target/src/target_robot.cpp,C++源码,中,更新ROS2 C++ API,待修改
+./submodules/AirCap/packages/simulation/random_moving_target/src/virtual_target_square_motion.cpp,C++源码,中,更新ROS2 C++ API,待修改
+./submodules/AirCap/packages/flight/multimaster_setup/mm_setup.launch,launch文件,低,转换为Python launch文件,待修改
+./submodules/AirCap/scripts/simulation/analyse_experiments.py,Python脚本,低,检查并更新ROS相关代码,待修改
+./submodules/AirCap/scripts/simulation/csv_statistics.py,Python脚本,低,检查并更新ROS相关代码,待修改
+./submodules/AirCap/scripts/simulation/csvdiff_robot.py,Python脚本,低,检查并更新ROS相关代码,待修改
+./submodules/AirCap/scripts/simulation/csvdiff_target.py,Python脚本,低,检查并更新ROS相关代码,待修改
+./submodules/AirCap/scripts/simulation/diffnode_robot.py,Python脚本,低,检查并更新ROS相关代码,待修改
+./submodules/AirCap/scripts/simulation/diffnode_target.py,Python脚本,低,检查并更新ROS相关代码,待修改
+./submodules/AirCap/scripts/simulation/rossleep.py,Python脚本,低,检查并更新ROS相关代码,待修改
+./submodules/pytorch_ssd_server/binary_structs.py,Python源码,低,检查并更新ROS相关代码,待修改
+./submodules/pytorch_ssd_server/model.py,Python源码,低,检查并更新ROS相关代码,待修改
+./submodules/pytorch_ssd_server/server.py,Python源码,中,检查并更新ROS相关代码,待修改
+./submodules/pytorch_ssd_server/utils.py,Python源码,低,检查并更新ROS相关代码,待修改
+./src/blimp_nmpc_wrapper_node/rviz/formationflight-simulation.rviz,RViz配置,低,检查RViz2兼容性,待修改
+
