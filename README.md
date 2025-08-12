@@ -1,49 +1,201 @@
-# Perception-driven Formation Control of Airships for project AirCap using nonlinear model predictive control (MPC)
+# Edited AirshipMPC - ROS2 Jazzy Version
+
+[![ROS2](https://img.shields.io/badge/ROS2-Jazzy-blue.svg)](https://docs.ros.org/en/jazzy/)
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-orange.svg)](https://ubuntu.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 ![airship_cover_with_inlay](https://user-images.githubusercontent.com/32105268/192122387-465e4489-5635-44d2-ab37-2071c48651a0.png)
 
-A preprint of our method is available on arXiv: https://arxiv.org/abs/2209.13040
+## 概述
 
-This video is giving an overview of our approach:<br>
+本项目是 AirshipMPC 的 ROS2 Jazzy 版本，专为飞艇的模型预测控制（MPC）而设计。该项目已从 ROS1 Noetic 完全迁移到 ROS2 Jazzy，包含了完整的飞行控制、路径规划、目标跟踪和仿真功能。
+
+**原始论文**: https://arxiv.org/abs/2209.13040
+
+**演示视频**:<br>
 [<img src="https://img.youtube.com/vi/ihS0_VRD_kk/0.jpg" width="300" alt="Youtube Video"/>](https://www.youtube.com/watch?v=ihS0_VRD_kk)
 
+## 🚀 新特性 (ROS2 版本)
 
-## Usage
+- ✅ **完全兼容 ROS2 Jazzy** - 所有包都已迁移到 ROS2
+- ✅ **Python Launch 文件** - 所有 launch 文件都转换为 Python 格式
+- ✅ **现代化 API** - 使用 rclcpp 和 rclpy 最新 API
+- ✅ **改进的构建系统** - 使用 ament_cmake 和 colcon
+- ✅ **更好的性能** - 利用 ROS2 的 DDS 通信优势
 
-1. Prepare a system matching the pre-requirements
-2. Download this sourcecode repository into your home folder
-3. Install the compilation requirements and compile code
-4. Run the simulation demo or the MPC evaluation demos
+## 📋 系统要求
 
-### Pre Requirements
+### 必需环境
+- **操作系统**: Ubuntu 22.04 LTS
+- **ROS版本**: ROS2 Jazzy Jalisco
+- **Python**: 3.10+
+- **CMake**: 3.16+
+- **编译器**: GCC 11+ 或 Clang 12+
 
-This code has been tested with Ubuntu Linux 20.04 LTS (Focal Fossa) and ROS Noetic Ninjemys only.
-The Neural Network detector used for person detection requires an NVIDIA GPU with current Cuda capable drivers installed.
+### 硬件要求
+- **内存**: 最少 8GB RAM（推荐 16GB）
+- **存储**: 至少 10GB 可用空间
+- **GPU**: 可选，用于神经网络检测（CUDA 支持）
 
-Note:<br>
-Without GPU, the SSD detector will not run, and the airships will not "see" the person used as a subject in the demo. They will then assume the subject at the center of the map and circle that stationary point instead.
+**注意**: 没有GPU时，SSD检测器将无法运行，飞艇将无法"看到"目标人员，会假设目标在地图中心并围绕该静止点飞行。
 
-### Download
+## 🛠️ 安装指南
 
-You can download the code with the command  ```git clone https://github.com/robot-perception-group/Airship-MPC```
+### 快速安装
+```bash
+# 克隆仓库
+git clone --recursive https://github.com/zuoyangjkpi/Edited_AirshipMPC.git
+cd Edited_AirshipMPC
 
-### Compile
+# 运行自动安装脚本
+chmod +x install_and_compile.sh
+./install_and_compile.sh
+```
 
-Please run the script ```./install_and_compile.sh``` it will install all necessary requirements including ROS Noetic Ninjemys and compile the code.
+### 手动安装
 
-### Execute
+#### 1. 安装 ROS2 Jazzy
+```bash
+# 添加 ROS2 源
+sudo apt update && sudo apt install curl gnupg lsb-release
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=$(dpkg --print-architecture)] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list'
 
- * The Gazebo simulation with wind and person tracking can be started with ```cd experiments/sim; ./airship_sim.sh 3```
- * The MPC can be tested standalone using it's own motion model for simulation with ```cd src; python3 blimps_costtest.py```
- * The solver generated trajectories and plots from our paper can be recreated with the scripts found in the subfolders in folder experiments/trajectory
+# 安装 ROS2 Jazzy
+sudo apt update
+sudo apt install ros-jazzy-desktop python3-argcomplete
+sudo apt install python3-colcon-common-extensions
+```
 
-### Modify
- * A simulation with a stationary person can be started with <br> ```cd experiments/sim; ./airship_sim.sh 3 100 test arena_BLIMP_stat_target```
- * Constraints and properties of the MPC can be modified in ```src/blimp_nmpc_wrapper_node/nodes/formation_config.py``` including the number of airships in the formation. Whenever this is changed, a recompilation is necessary.
- * ```submodules/AirCap/packages/3rdparty/airship_simulation/deflate_blimp.sh``` can be used to alter the airship buoyancy and rigidity
- * Wind and other environmental parameters affecting the airships can be modified by editing ```submodules/AirCap/packages/3rdparty/airship_simulation/blimp_description/urdf/description_plugin.xacro```. This folder also includes the physical model description of the airship and it's aerodynamic properties in Gazebo URDF format.
- * The scripts in ```submodules/AirCap/scripts/simulation/``` can be used to run various other experiments, including standard AirCap with multicopters
+#### 2. 安装依赖包
+```bash
+# ROS2 依赖
+sudo apt install ros-jazzy-cv-bridge ros-jazzy-image-transport
+sudo apt install ros-jazzy-tf2 ros-jazzy-tf2-ros ros-jazzy-tf2-geometry-msgs
+sudo apt install ros-jazzy-nav-msgs ros-jazzy-sensor-msgs ros-jazzy-geometry-msgs
+sudo apt install ros-jazzy-std-msgs ros-jazzy-visualization-msgs
 
-### Real Airship
-To run the controller on a real airship, the vehicle needs an OpenPilot Revolution Flight controller or compatible
-and a companion computer capable of running neural networks and with wireless communication capability connected via USB. We are using an NVIDIA Jetson TX1 or TX2 with integrated wifi.
-ROS should ideally be run in a multi master setup using fkie_multimaster, with an instance of the MPC running on each vehicle.
+# 系统依赖
+sudo apt install python3-pip python3-numpy python3-scipy
+sudo apt install libopencv-dev python3-opencv
+sudo apt install libeigen3-dev libboost-all-dev
+
+# Python 依赖
+pip3 install casadi matplotlib numpy scipy
+```
+
+#### 3. 编译项目
+```bash
+# 设置环境
+source /opt/ros/jazzy/setup.bash
+
+# 编译
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+
+# 设置环境变量
+source install/setup.bash
+```
+
+## 🎮 使用方法
+
+### 基本启动
+```bash
+# 启动单个飞艇
+ros2 launch blimp_nmpc_wrapper_node one_blimp.launch.py
+
+# 启动仿真环境（3个飞艇）
+ros2 launch aircap simulation.launch.py num_robots:=3
+
+# 启动目标检测
+ros2 launch neural_network_detector one_robot.launch.py
+```
+
+### 仿真演示
+```bash
+# Gazebo仿真（带风力和人员跟踪）
+cd experiments/sim
+./airship_sim.sh 3
+
+# 静止目标仿真
+./airship_sim.sh 3 100 test arena_BLIMP_stat_target
+
+# MPC独立测试
+cd src
+python3 blimps_costtest.py
+```
+
+### 参数配置
+```bash
+# 设置机器人ID和数量
+ros2 launch blimp_nmpc_wrapper_node one_blimp.launch.py robotID:=1 numRobots:=3
+```
+
+## 🔧 配置和修改
+
+### MPC参数调整
+- **配置文件**: `src/blimp_nmpc_wrapper_node/nodes/formation_config.py`
+- **包含内容**: MPC约束、编队数量、控制参数
+- **注意**: 修改后需要重新编译
+
+### 飞艇物理参数
+- **浮力和刚性**: `submodules/AirCap/packages/3rdparty/airship_simulation/deflate_blimp.sh`
+- **风力和环境**: `submodules/AirCap/packages/3rdparty/airship_simulation/blimp_description/urdf/description_plugin.xacro`
+- **物理模型**: URDF格式的空气动力学属性
+
+### 其他实验
+- **脚本位置**: `submodules/AirCap/scripts/simulation/`
+- **包含内容**: 标准AirCap多旋翼实验等
+
+## 🚁 真实飞艇部署
+
+### 硬件要求
+- **飞控**: OpenPilot Revolution 或兼容飞控
+- **计算平台**: NVIDIA Jetson TX1/TX2 或类似设备
+- **连接**: USB连接，集成WiFi
+- **网络**: 建议使用fkie_multimaster多主机设置
+
+### 部署配置
+```bash
+# 多主机ROS2设置
+export ROS_DOMAIN_ID=<unique_id>
+export RMW_IMPLEMENTATION=rmw_cyclonedx_cpp
+```
+
+## 📊 性能优化
+
+### ROS2 优势
+- **更低延迟** - DDS 通信协议
+- **更好的实时性** - 改进的调度机制
+- **更强的安全性** - 内置安全特性
+- **更好的扩展性** - 支持大规模部署
+
+## 🔄 从 ROS1 迁移
+
+如果您之前使用的是 ROS1 版本，请参考 [迁移指南](ROS1_to_ROS2_Migration_Report.md) 了解详细的变更内容。
+
+### 主要变更
+- **构建系统**: catkin → ament_cmake
+- **Python API**: rospy → rclpy  
+- **C++ API**: ros → rclcpp
+- **Launch 文件**: XML → Python
+- **包格式**: format="2" → format="3"
+
+## 📚 文档
+
+- [迁移报告](ROS1_to_ROS2_Migration_Report.md) - 详细的迁移过程
+- [交付清单](DELIVERABLES.md) - 完整的文件清单
+- [ROS2 Jazzy 文档](https://docs.ros.org/en/jazzy/)
+
+## 🤝 贡献
+
+- **项目维护者**: [zuoyangjkpi](https://github.com/zuoyangjkpi)
+- **问题报告**: [GitHub Issues](https://github.com/zuoyangjkpi/Edited_AirshipMPC/issues)
+- **原始项目**: [AirCap](https://github.com/robot-perception-group/AirCap)
+
+## 📄 许可证
+
+本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件。
+
+---
+
+**享受 ROS2 带来的全新体验！** 🚀
