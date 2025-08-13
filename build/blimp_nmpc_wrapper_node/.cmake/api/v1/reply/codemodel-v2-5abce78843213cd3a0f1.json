@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-4d42def3bd271e7ae4cd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "blimp_nmpc_wrapper_node",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_blimp_nmpc_wrapper_node_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_blimp_nmpc_wrapper_node_egg-Release-7da9ef0c586ce75b4dca.json",
+					"name" : "ament_cmake_python_build_blimp_nmpc_wrapper_node_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_blimp_nmpc_wrapper_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_blimp_nmpc_wrapper_node-Release-d8e6af819c48de9ad608.json",
+					"name" : "ament_cmake_python_symlink_blimp_nmpc_wrapper_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "blimp_nmpc_wrapper_node_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-blimp_nmpc_wrapper_node_uninstall-Release-1fe31005b483c64fbaf3.json",
+					"name" : "blimp_nmpc_wrapper_node_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-289fa607416efc4c0506.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/Edited_AirshipMPC/build/blimp_nmpc_wrapper_node",
+		"source" : "/home/ubuntu/Edited_AirshipMPC/src/blimp_nmpc_wrapper_node"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

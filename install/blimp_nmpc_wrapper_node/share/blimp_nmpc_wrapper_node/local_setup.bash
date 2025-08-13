@@ -1,0 +1,1 @@
+/home/ubuntu/Edited_AirshipMPC/build/blimp_nmpc_wrapper_node/ament_cmake_environment_hooks/local_setup.bash

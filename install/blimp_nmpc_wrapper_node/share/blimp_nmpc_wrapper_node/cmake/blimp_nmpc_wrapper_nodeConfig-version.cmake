@@ -1,0 +1,1 @@
+/home/ubuntu/Edited_AirshipMPC/build/blimp_nmpc_wrapper_node/ament_cmake_core/blimp_nmpc_wrapper_nodeConfig-version.cmake
