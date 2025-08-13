@@ -9,6 +9,8 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
 
 # Include directories
 include_directories(include)
@@ -22,6 +24,8 @@ add_library(${PROJECT_NAME}
 ament_target_dependencies(${PROJECT_NAME}
   rclcpp
   geometry_msgs
+  tf2
+  tf2_geometry_msgs
 )
 
 # Declare a C++ executable for testing
@@ -33,6 +37,8 @@ add_executable(${PROJECT_NAME}_test
 ament_target_dependencies(${PROJECT_NAME}_test
   rclcpp
   geometry_msgs
+  tf2
+  tf2_geometry_msgs
 )
 
 # Link the library to the executable
@@ -64,7 +70,7 @@ endif()
 # Export dependencies
 ament_export_include_directories(include)
 ament_export_libraries(${PROJECT_NAME})
-ament_export_dependencies(rclcpp geometry_msgs)
+ament_export_dependencies(rclcpp geometry_msgs tf2 tf2_geometry_msgs)
 
 ament_package()
 
