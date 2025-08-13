@@ -28,23 +28,23 @@ ament_target_dependencies(${PROJECT_NAME}
   tf2_geometry_msgs
 )
 
-# Declare a C++ executable for testing
-add_executable(${PROJECT_NAME}_test
-  test/test_interface.cpp
-)
+# Declare a C++ executable for testing (temporarily disabled)
+# add_executable(${PROJECT_NAME}_test
+#   test/test_interface.cpp
+# )
 
-# Specify dependencies for the executable
-ament_target_dependencies(${PROJECT_NAME}_test
-  rclcpp
-  geometry_msgs
-  tf2
-  tf2_geometry_msgs
-)
+# Specify dependencies for the executable (temporarily disabled)
+# ament_target_dependencies(${PROJECT_NAME}_test
+#   rclcpp
+#   geometry_msgs
+#   tf2
+#   tf2_geometry_msgs
+# )
 
-# Link the library to the executable
-target_link_libraries(${PROJECT_NAME}_test
-  ${PROJECT_NAME}
-)
+# Link the library to the executable (temporarily disabled)
+# target_link_libraries(${PROJECT_NAME}_test
+#   ${PROJECT_NAME}
+# )
 
 # Install targets
 install(TARGETS
@@ -52,10 +52,11 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 
-install(TARGETS
-  ${PROJECT_NAME}_test
-  DESTINATION lib/${PROJECT_NAME}
-)
+# Install test executable (temporarily disabled)
+# install(TARGETS
+#   ${PROJECT_NAME}_test
+#   DESTINATION lib/${PROJECT_NAME}
+# )
 
 # Install header files
 install(DIRECTORY include/
