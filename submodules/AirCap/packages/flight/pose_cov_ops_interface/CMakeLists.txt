@@ -9,7 +9,6 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(pose_cov_ops REQUIRED)
 
 # Include directories
 include_directories(include)
@@ -23,7 +22,6 @@ add_library(${PROJECT_NAME}
 ament_target_dependencies(${PROJECT_NAME}
   rclcpp
   geometry_msgs
-  pose_cov_ops
 )
 
 # Declare a C++ executable for testing
@@ -35,7 +33,6 @@ add_executable(${PROJECT_NAME}_test
 ament_target_dependencies(${PROJECT_NAME}_test
   rclcpp
   geometry_msgs
-  pose_cov_ops
 )
 
 # Link the library to the executable
@@ -67,7 +64,7 @@ endif()
 # Export dependencies
 ament_export_include_directories(include)
 ament_export_libraries(${PROJECT_NAME})
-ament_export_dependencies(rclcpp geometry_msgs pose_cov_ops)
+ament_export_dependencies(rclcpp geometry_msgs)
 
 ament_package()
 
