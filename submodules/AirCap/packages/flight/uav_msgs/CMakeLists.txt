@@ -1,16 +1,27 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.8)
 project(uav_msgs)
 
-find_package(catkin REQUIRED message_generation std_msgs nav_msgs geometry_msgs)
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
-add_message_files(
-  FILES
-  uav_pose.msg
+# find dependencies
+find_package(ament_cmake REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/uav_pose.msg"
+  DEPENDENCIES std_msgs nav_msgs geometry_msgs
 )
 
-generate_messages(DEPENDENCIES std_msgs nav_msgs geometry_msgs)
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
-catkin_package(
-  CATKIN_DEPENDS message_runtime std_msgs nav_msgs geometry_msgs
-)
+ament_export_dependencies(rosidl_default_runtime)
+ament_package()
 
