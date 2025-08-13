@@ -1,9 +1,9 @@
 // based on the example https://github.com/garyservin/serial-example/blob/master/src/serial_example_node.cpp
 
-#include <ros/ros.h>
-#include <std_msgs/String.h>
-#include <std_msgs/Empty.h>
-#include <geometry_msgs/PoseWithCovarianceStamped.h>
+#include <rclcpp/rclcpp.hpp>
+#include <std_msgs/msg/string.hpp>
+#include <std_msgs/msg/empty.hpp>
+#include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
 #include <string>
 #include <iostream>
 #include <fstream>
