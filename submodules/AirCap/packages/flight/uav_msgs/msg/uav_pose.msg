@@ -14,7 +14,7 @@ geometry_msgs/Point position
 geometry_msgs/Point velocity
 geometry_msgs/Quaternion orientation  
 float64[100] covariance
-geometry_msgs/Point angVelocity
+geometry_msgs/Point ang_velocity
 float64 thrust
 int32 flightmode
 geometry_msgs/Point POI
