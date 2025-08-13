@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<launch>
+
+    <arg name="robotID" default="1" />
+    <arg name="numRobots" default="1" />
+    <arg name="gpuHost" default="localhost" />
+    <arg name="gpuPort" default="9900" />
+    <arg name="librepilotBasePort" default="9002" />
+    <arg name="librepilotOffset" default="100" />
+    <arg name="librepilotPort" default="$(eval arg('librepilotBasePort') + arg('librepilotOffset')*(arg('robotID')-1) )" />
+    <arg name="librepilotIP" default="127.0.0.1" />
+    <arg name="librepilotUseUDP" default="true" />
+    <arg name="librepilotBaud" default="115200" />
+    <arg name="librepilotDevice" default="/dev/flightcontroller_serial" />
+    <arg name="rvizView" default="false" />
+    <arg name="addOffset" default="false"/>
+    <arg name="addCovariance" default="true"/>
+    <arg name="max_update_force" default="true"/>
+    <arg name="max_update_rate" default="4"/>
+    <arg name="comSuccessRate" default="100"/>
+    <arg name="X" default="0.0"/>
+    <arg name="Y" default="0.0"/>
+    <arg name="Z" default="1.0"/>
+
+
+    <include file="$(find target_tracker_distributed_kf)/launch/tracker.launch">
+	      <arg name="robotID" value="$(arg robotID)" />
+	      <arg name="numRobots" value="$(arg numRobots)" />
+        <arg name="measurement_topic_suffix" default="object_detections/projected_to_world_network"/>
+    </include>
+
+    <include file="$(find tf_from_uav_pose)/launch/for_blimp.launch">
+        <arg name="robotID" value="$(arg robotID)" />
+	<!--
+        <arg name="cameraStaticPublish" value="true"/>
+        <arg unless="$(arg rvizView)" name="dontPublishTFs" value="true"/>
+        <arg if="$(arg rvizView)" name="dontPublishTFs" value="false"/>
+
+	<arg if="$(arg addCovariance)" name="covarianceX" value="0.5"/>
+	<arg if="$(arg addCovariance)" name="covarianceY" value="0.5"/>
+	<arg if="$(arg addCovariance)" name="covarianceZ" value="1.0"/>-->
+
+	<!--HACKED offset compensation due to different global frame-->
+	<!--<arg if="$(arg addOffset)" name="HACK_OFFSET" value="[-1.6140871346,-0.725805521,-1.4716273546]"/>-->
+    </include>
+
+    <include file="$(find model_distance_from_height)/launch/one_robot.launch">
+        <arg name="robotID" value="$(arg robotID)" />
+<!--        <arg name="height_model/mean" value="1.690"/>-->
+        <!--arg name="height_model/var" value="0.0926"/-->
+<!--	<arg name="height_model/var" value="1.0"/>
+        <arg if="$(arg usingTracker)" name="tracker_topic" value="target_tracker/pose"/>
+        <arg unless="$(arg usingTracker)" name="tracker_topic" value="object_detections/projected_to_world"/>
+	<arg name="uncertainty_scale/head" value="2.0"/>
+	<arg name="uncertainty_scale/feet" value="2.0"/>-->
+    </include>
+
+    <include file="$(find neural_network_detector)/launch/one_robot.launch">
+        <arg name="robotID" value="$(arg robotID)" />
+        <arg name="host" value="$(arg gpuHost)"/>
+        <arg name="port" value="$(arg gpuPort)"/>
+	<arg name="img_topic" value="/machine_$(arg robotID)/xtion/rgb/image_raw"/>
+        <!--<arg name="img_topic" value="video"/>-->
+	<arg name="max_update_force" value="$(arg max_update_force)"/>
+	<arg name="max_update_rate" value="$(arg max_update_rate)" />
+	<!--arg name="feedback_topic" value="dummy" /-->  <!--remove after use-->
+    </include>
+
+    <include file="$(find camera_configs)/launch/publish_info_gazebo.launch">
+        <arg name="robotID" value="$(arg robotID)" />
+        <arg name="topic" value="camera_info"/>
+    </include>
+
+    <group ns="machine_$(arg robotID)" unless="$(arg librepilotUseUDP)">
+	    <arg name="name" value="librepilot_node_$(arg robotID)" />
+	    <node name="$(arg name)" pkg="librepilot" type="librepilot_node" output="screen" args="/machine_$(arg robotID) $(arg librepilotDevice) $(arg librepilotBaud)">
+		    <remap from="/machine_$(arg robotID)/offset" to="/machine_$(arg robotID)/target_tracker/offset" />
+	    </node>
+    </group>
+    <group ns="machine_$(arg robotID)" if="$(arg librepilotUseUDP)">
+	    <arg name="name" value="librepilot_node_$(arg robotID)" />
+	    <node name="$(arg name)" pkg="librepilot" type="librepilot_node" output="screen" args="/machine_$(arg robotID) UDP $(arg librepilotIP) $(arg librepilotPort)">
+		    <remap from="/machine_$(arg robotID)/offset" to="/machine_$(arg robotID)/target_tracker/offset" />
+	    </node>
+    </group>
+
+    <!--<include file="$(find nmpc_planner)/launch/planner_activeTracking.launch">
+        <arg name="robotID" value="$(arg robotID)" />
+        <arg name="NUM_ROBOTS" value="$(arg numRobots)" />
+	<arg name="NEIGHBOR_TOPIC" value="/throttledPoseComFail"/>
+	<arg name="usingSimulation" value="0" />
+    </include>-->
+    <group ns="machine_$(arg robotID)">
+	    <arg name="name" value="nmpc_blimp_planner" />
+            <node name="$(arg name)" pkg="nmpc_blimp_formation_planner" type="nmpc_blimp_planner" output="screen" >
+                <rosparam file="$(find nmpc_blimp_formation_planner)/config/open_params.yaml" />
+	    </node>
+    </group>
+    <group ns="machine_$(arg robotID)">
+	    <arg name="name" value="blimp_nmpc_wrapper_node" />
+            <node name="$(arg name)" pkg="blimp_nmpc_wrapper_node" type="blimp_nmpc_wrapper_node.py" output="screen" >
+                <param name="robotID" value="$(arg robotID)" />
+                <param name="numRobots" value="$(arg numRobots)" />
+	    </node>
+    </group>
+
+    <include file="$(find fake_communication_failure)/launch/default.launch">
+        <arg name="robotID" value="$(arg robotID)" />
+        <arg name="comSuccessRate" value="$(arg comSuccessRate)" />
+    </include>
+
+    <include file="$(find fake_communication_failure)/launch/default.launch">
+        <arg name="robotID" value="$(arg robotID)" />
+        <arg name="comSuccessRate" value="$(arg comSuccessRate)" />
+        <arg name="source" value="/machine_$(arg robotID)/throttledPose"/>
+        <arg name="dest" value="/machine_$(arg robotID)/throttledPoseComFail"/>
+        <arg name="instance" value="2"/>
+    </include>
+
+    <!-- the blimp -->
+    <include file="$(find blimp_description)/launch/blimp_only.launch">
+        <arg name="uav_name" value="machine_$(arg robotID)" />
+        <arg name="X" value="$(arg X)" />
+        <arg name="Y" value="$(arg Y)" />
+        <arg name="Z" value="$(arg Z)" />
+
+    </include>
+</launch>
