@@ -1,9 +1,0 @@
-/home/ubuntu/Edited_AirshipMPC/build/aircap/CMakeFiles/uninstall.dir
-/home/ubuntu/Edited_AirshipMPC/build/aircap/CMakeFiles/aircap_uninstall.dir
-/home/ubuntu/Edited_AirshipMPC/build/aircap/CMakeFiles/test.dir
-/home/ubuntu/Edited_AirshipMPC/build/aircap/CMakeFiles/edit_cache.dir
-/home/ubuntu/Edited_AirshipMPC/build/aircap/CMakeFiles/rebuild_cache.dir
-/home/ubuntu/Edited_AirshipMPC/build/aircap/CMakeFiles/list_install_components.dir
-/home/ubuntu/Edited_AirshipMPC/build/aircap/CMakeFiles/install.dir
-/home/ubuntu/Edited_AirshipMPC/build/aircap/CMakeFiles/install/local.dir
-/home/ubuntu/Edited_AirshipMPC/build/aircap/CMakeFiles/install/strip.dir

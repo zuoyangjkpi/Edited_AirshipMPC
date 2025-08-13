@@ -1,0 +1,5 @@
+source;share/neural_network_detector/local_setup.bash
+source;share/neural_network_detector/local_setup.dsv
+source;share/neural_network_detector/local_setup.ps1
+source;share/neural_network_detector/local_setup.sh
+source;share/neural_network_detector/local_setup.zsh

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "neural_network_detector__py",
+		"source" : "/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/neural_network_detector__py"
+	}
+}

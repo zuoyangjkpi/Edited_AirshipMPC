@@ -1,0 +1,8 @@
+msg/NeuralNetworkDetection.idl
+msg/NeuralNetworkDetection.msg
+msg/NeuralNetworkDetectionArray.idl
+msg/NeuralNetworkDetectionArray.msg
+msg/NeuralNetworkFeedback.idl
+msg/NeuralNetworkFeedback.msg
+msg/NeuralNetworkNumberOfDetections.idl
+msg/NeuralNetworkNumberOfDetections.msg

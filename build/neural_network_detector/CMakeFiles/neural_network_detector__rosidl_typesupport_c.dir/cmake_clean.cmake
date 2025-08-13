@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/neural_network_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/neural_network_detector/msg/neural_network_detection__type_support.cpp.o"
+  "CMakeFiles/neural_network_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/neural_network_detector/msg/neural_network_detection__type_support.cpp.o.d"
+  "CMakeFiles/neural_network_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/neural_network_detector/msg/neural_network_detection_array__type_support.cpp.o"
+  "CMakeFiles/neural_network_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/neural_network_detector/msg/neural_network_detection_array__type_support.cpp.o.d"
+  "CMakeFiles/neural_network_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/neural_network_detector/msg/neural_network_feedback__type_support.cpp.o"
+  "CMakeFiles/neural_network_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/neural_network_detector/msg/neural_network_feedback__type_support.cpp.o.d"
+  "CMakeFiles/neural_network_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/neural_network_detector/msg/neural_network_number_of_detections__type_support.cpp.o"
+  "CMakeFiles/neural_network_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/neural_network_detector/msg/neural_network_number_of_detections__type_support.cpp.o.d"
+  "libneural_network_detector__rosidl_typesupport_c.pdb"
+  "libneural_network_detector__rosidl_typesupport_c.so"
+  "rosidl_typesupport_c/neural_network_detector/msg/neural_network_detection__type_support.cpp"
+  "rosidl_typesupport_c/neural_network_detector/msg/neural_network_detection_array__type_support.cpp"
+  "rosidl_typesupport_c/neural_network_detector/msg/neural_network_feedback__type_support.cpp"
+  "rosidl_typesupport_c/neural_network_detector/msg/neural_network_number_of_detections__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/neural_network_detector__rosidl_typesupport_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

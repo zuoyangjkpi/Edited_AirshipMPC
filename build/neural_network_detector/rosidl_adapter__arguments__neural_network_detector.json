@@ -1,0 +1,9 @@
+{
+  "package_name": "neural_network_detector",
+  "non_idl_tuples": [
+    "/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector:msg/NeuralNetworkDetection.msg",
+    "/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector:msg/NeuralNetworkDetectionArray.msg",
+    "/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector:msg/NeuralNetworkFeedback.msg",
+    "/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector:msg/NeuralNetworkNumberOfDetections.msg"
+  ]
+}

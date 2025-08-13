@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from neural_network_detector/msg/NeuralNetworkFeedback.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module neural_network_detector {
+  module msg {
+    struct NeuralNetworkFeedback {
+      std_msgs::msg::Header header;
+
+      int16 ymin;
+
+      int16 ymax;
+
+      int16 xcenter;
+
+      @verbatim (language="comment", text=
+        "Debug stuff")
+      boolean debug_included;
+
+      int16 head_raw;
+
+      int16 feet_raw;
+
+      int16 ycenter;
+    };
+  };
+};

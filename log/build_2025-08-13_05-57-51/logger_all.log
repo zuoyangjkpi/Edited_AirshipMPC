@@ -1,0 +1,836 @@
+[0.193s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--cmake-args', '-DCMAKE_BUILD_TYPE=Release', '--packages-select', 'neural_network_detector']
+[0.193s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['neural_network_detector'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=Release'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f179f37d7d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f179f446f90>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f179f446f90>>)
+[0.253s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.253s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.253s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.253s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.253s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.253s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.253s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/Edited_AirshipMPC'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(experiments) by extensions ['ignore', 'ignore_ament_install']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(experiments) by extension 'ignore'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(experiments) by extension 'ignore_ament_install'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(experiments) by extensions ['colcon_pkg']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(experiments) by extension 'colcon_pkg'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(experiments) by extensions ['colcon_meta']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(experiments) by extension 'colcon_meta'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(experiments) by extensions ['ros']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(experiments) by extension 'ros'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(experiments) by extensions ['cmake', 'python']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(experiments) by extension 'cmake'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(experiments) by extension 'python'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(experiments) by extensions ['python_setup_py']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(experiments) by extension 'python_setup_py'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/sim) by extensions ['ignore', 'ignore_ament_install']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/sim) by extension 'ignore'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/sim) by extension 'ignore_ament_install'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/sim) by extensions ['colcon_pkg']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/sim) by extension 'colcon_pkg'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/sim) by extensions ['colcon_meta']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/sim) by extension 'colcon_meta'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/sim) by extensions ['ros']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/sim) by extension 'ros'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/sim) by extensions ['cmake', 'python']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/sim) by extension 'cmake'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/sim) by extension 'python'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/sim) by extensions ['python_setup_py']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/sim) by extension 'python_setup_py'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory) by extensions ['ignore', 'ignore_ament_install']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory) by extension 'ignore'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory) by extension 'ignore_ament_install'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory) by extensions ['colcon_pkg']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory) by extension 'colcon_pkg'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory) by extensions ['colcon_meta']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory) by extension 'colcon_meta'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory) by extensions ['ros']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory) by extension 'ros'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory) by extensions ['cmake', 'python']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory) by extension 'cmake'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory) by extension 'python'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory) by extensions ['python_setup_py']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory) by extension 'python_setup_py'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/3-vehicle_alpha+10_87_theta+_psi+) by extensions ['ignore', 'ignore_ament_install']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/3-vehicle_alpha+10_87_theta+_psi+) by extension 'ignore'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/3-vehicle_alpha+10_87_theta+_psi+) by extension 'ignore_ament_install'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/3-vehicle_alpha+10_87_theta+_psi+) by extensions ['colcon_pkg']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/3-vehicle_alpha+10_87_theta+_psi+) by extension 'colcon_pkg'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/3-vehicle_alpha+10_87_theta+_psi+) by extensions ['colcon_meta']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/3-vehicle_alpha+10_87_theta+_psi+) by extension 'colcon_meta'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/3-vehicle_alpha+10_87_theta+_psi+) by extensions ['ros']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/3-vehicle_alpha+10_87_theta+_psi+) by extension 'ros'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/3-vehicle_alpha+10_87_theta+_psi+) by extensions ['cmake', 'python']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/3-vehicle_alpha+10_87_theta+_psi+) by extension 'cmake'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/3-vehicle_alpha+10_87_theta+_psi+) by extension 'python'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/3-vehicle_alpha+10_87_theta+_psi+) by extensions ['python_setup_py']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/3-vehicle_alpha+10_87_theta+_psi+) by extension 'python_setup_py'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta+_psi+) by extensions ['ignore', 'ignore_ament_install']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta+_psi+) by extension 'ignore'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta+_psi+) by extension 'ignore_ament_install'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta+_psi+) by extensions ['colcon_pkg']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta+_psi+) by extension 'colcon_pkg'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta+_psi+) by extensions ['colcon_meta']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta+_psi+) by extension 'colcon_meta'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta+_psi+) by extensions ['ros']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta+_psi+) by extension 'ros'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta+_psi+) by extensions ['cmake', 'python']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta+_psi+) by extension 'cmake'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta+_psi+) by extension 'python'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta+_psi+) by extensions ['python_setup_py']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta+_psi+) by extension 'python_setup_py'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta-_psi+) by extensions ['ignore', 'ignore_ament_install']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta-_psi+) by extension 'ignore'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta-_psi+) by extension 'ignore_ament_install'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta-_psi+) by extensions ['colcon_pkg']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta-_psi+) by extension 'colcon_pkg'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta-_psi+) by extensions ['colcon_meta']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta-_psi+) by extension 'colcon_meta'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta-_psi+) by extensions ['ros']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta-_psi+) by extension 'ros'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta-_psi+) by extensions ['cmake', 'python']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta-_psi+) by extension 'cmake'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta-_psi+) by extension 'python'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta-_psi+) by extensions ['python_setup_py']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10-87_theta-_psi+) by extension 'python_setup_py'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta+_psi+) by extensions ['ignore', 'ignore_ament_install']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta+_psi+) by extension 'ignore'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta+_psi+) by extension 'ignore_ament_install'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta+_psi+) by extensions ['colcon_pkg']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta+_psi+) by extension 'colcon_pkg'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta+_psi+) by extensions ['colcon_meta']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta+_psi+) by extension 'colcon_meta'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta+_psi+) by extensions ['ros']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta+_psi+) by extension 'ros'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta+_psi+) by extensions ['cmake', 'python']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta+_psi+) by extension 'cmake'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta+_psi+) by extension 'python'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta+_psi+) by extensions ['python_setup_py']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta+_psi+) by extension 'python_setup_py'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta-_psi+) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta-_psi+) by extension 'ignore'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta-_psi+) by extension 'ignore_ament_install'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta-_psi+) by extensions ['colcon_pkg']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta-_psi+) by extension 'colcon_pkg'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta-_psi+) by extensions ['colcon_meta']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta-_psi+) by extension 'colcon_meta'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta-_psi+) by extensions ['ros']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta-_psi+) by extension 'ros'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta-_psi+) by extensions ['cmake', 'python']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta-_psi+) by extension 'cmake'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta-_psi+) by extension 'python'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta-_psi+) by extensions ['python_setup_py']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha+10_theta-_psi+) by extension 'python_setup_py'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta+_psi+) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta+_psi+) by extension 'ignore'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta+_psi+) by extension 'ignore_ament_install'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta+_psi+) by extensions ['colcon_pkg']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta+_psi+) by extension 'colcon_pkg'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta+_psi+) by extensions ['colcon_meta']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta+_psi+) by extension 'colcon_meta'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta+_psi+) by extensions ['ros']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta+_psi+) by extension 'ros'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta+_psi+) by extensions ['cmake', 'python']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta+_psi+) by extension 'cmake'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta+_psi+) by extension 'python'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta+_psi+) by extensions ['python_setup_py']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta+_psi+) by extension 'python_setup_py'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi+) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi+) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi+) by extension 'ignore_ament_install'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi+) by extensions ['colcon_pkg']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi+) by extension 'colcon_pkg'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi+) by extensions ['colcon_meta']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi+) by extension 'colcon_meta'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi+) by extensions ['ros']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi+) by extension 'ros'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi+) by extensions ['cmake', 'python']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi+) by extension 'cmake'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi+) by extension 'python'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi+) by extensions ['python_setup_py']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi+) by extension 'python_setup_py'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi-) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi-) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi-) by extension 'ignore_ament_install'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi-) by extensions ['colcon_pkg']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi-) by extension 'colcon_pkg'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi-) by extensions ['colcon_meta']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi-) by extension 'colcon_meta'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi-) by extensions ['ros']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi-) by extension 'ros'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi-) by extensions ['cmake', 'python']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi-) by extension 'cmake'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi-) by extension 'python'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi-) by extensions ['python_setup_py']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(experiments/trajectory/alpha-_theta-_psi-) by extension 'python_setup_py'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/blimp_nmpc_wrapper_node) by extensions ['ignore', 'ignore_ament_install']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/blimp_nmpc_wrapper_node) by extension 'ignore'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/blimp_nmpc_wrapper_node) by extension 'ignore_ament_install'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/blimp_nmpc_wrapper_node) by extensions ['colcon_pkg']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/blimp_nmpc_wrapper_node) by extension 'colcon_pkg'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/blimp_nmpc_wrapper_node) by extensions ['colcon_meta']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/blimp_nmpc_wrapper_node) by extension 'colcon_meta'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/blimp_nmpc_wrapper_node) by extensions ['ros']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/blimp_nmpc_wrapper_node) by extension 'ros'
+[0.293s] DEBUG:colcon.colcon_core.package_identification:Package 'src/blimp_nmpc_wrapper_node' with type 'ros.ament_cmake' and name 'blimp_nmpc_wrapper_node'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen) by extensions ['ignore', 'ignore_ament_install']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen) by extension 'ignore'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen) by extension 'ignore_ament_install'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen) by extensions ['colcon_pkg']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen) by extension 'colcon_pkg'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen) by extensions ['colcon_meta']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen) by extension 'colcon_meta'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen) by extensions ['ros']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen) by extension 'ros'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen) by extensions ['cmake', 'python']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen) by extension 'cmake'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen) by extension 'python'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen) by extensions ['python_setup_py']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen) by extension 'python_setup_py'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen/nmpc_blimp_formation_optimizer) by extensions ['ignore', 'ignore_ament_install']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen/nmpc_blimp_formation_optimizer) by extension 'ignore'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen/nmpc_blimp_formation_optimizer) by extension 'ignore_ament_install'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen/nmpc_blimp_formation_optimizer) by extensions ['colcon_pkg']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen/nmpc_blimp_formation_optimizer) by extension 'colcon_pkg'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen/nmpc_blimp_formation_optimizer) by extensions ['colcon_meta']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen/nmpc_blimp_formation_optimizer) by extension 'colcon_meta'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen/nmpc_blimp_formation_optimizer) by extensions ['ros']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen/nmpc_blimp_formation_optimizer) by extension 'ros'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen/nmpc_blimp_formation_optimizer) by extensions ['cmake', 'python']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen/nmpc_blimp_formation_optimizer) by extension 'cmake'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/codegen/nmpc_blimp_formation_optimizer) by extension 'python'
+[0.296s] DEBUG:colcon.colcon_core.package_identification:Package 'src/codegen/nmpc_blimp_formation_optimizer' with type 'cmake' and name 'nmpc_blimp_formation_optimizer'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/nmpc_blimp_formation_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/nmpc_blimp_formation_planner) by extension 'ignore'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/nmpc_blimp_formation_planner) by extension 'ignore_ament_install'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/nmpc_blimp_formation_planner) by extensions ['colcon_pkg']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/nmpc_blimp_formation_planner) by extension 'colcon_pkg'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/nmpc_blimp_formation_planner) by extensions ['colcon_meta']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/nmpc_blimp_formation_planner) by extension 'colcon_meta'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/nmpc_blimp_formation_planner) by extensions ['ros']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/nmpc_blimp_formation_planner) by extension 'ros'
+[0.297s] DEBUG:colcon.colcon_core.package_identification:Package 'src/nmpc_blimp_formation_planner' with type 'ros.catkin' and name 'nmpc_blimp_formation_planner'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(submodules) by extensions ['ignore', 'ignore_ament_install']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(submodules) by extension 'ignore'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(submodules) by extension 'ignore_ament_install'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(submodules) by extensions ['colcon_pkg']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(submodules) by extension 'colcon_pkg'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(submodules) by extensions ['colcon_meta']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(submodules) by extension 'colcon_meta'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(submodules) by extensions ['ros']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(submodules) by extension 'ros'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(submodules) by extensions ['cmake', 'python']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(submodules) by extension 'cmake'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(submodules) by extension 'python'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(submodules) by extensions ['python_setup_py']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules) by extension 'python_setup_py'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap) by extension 'ignore_ament_install'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap) by extensions ['colcon_pkg']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap) by extension 'colcon_pkg'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap) by extensions ['colcon_meta']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap) by extension 'colcon_meta'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap) by extensions ['ros']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap) by extension 'ros'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap) by extensions ['cmake', 'python']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap) by extension 'cmake'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap) by extension 'python'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap) by extensions ['python_setup_py']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap) by extension 'python_setup_py'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages) by extension 'ignore_ament_install'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages) by extensions ['colcon_pkg']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages) by extension 'colcon_pkg'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages) by extensions ['colcon_meta']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages) by extension 'colcon_meta'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages) by extensions ['ros']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages) by extension 'ros'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages) by extensions ['cmake', 'python']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages) by extension 'cmake'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages) by extension 'python'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages) by extensions ['python_setup_py']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages) by extension 'python_setup_py'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty) by extension 'ignore_ament_install'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty) by extensions ['colcon_pkg']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty) by extension 'colcon_pkg'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty) by extensions ['colcon_meta']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty) by extension 'colcon_meta'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty) by extensions ['ros']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty) by extension 'ros'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty) by extensions ['cmake', 'python']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty) by extension 'cmake'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty) by extension 'python'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty) by extensions ['python_setup_py']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty) by extension 'python_setup_py'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/pose_cov_ops) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/pose_cov_ops) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/pose_cov_ops) by extension 'ignore_ament_install'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/pose_cov_ops) by extensions ['colcon_pkg']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/pose_cov_ops) by extension 'colcon_pkg'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/pose_cov_ops) by extensions ['colcon_meta']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/pose_cov_ops) by extension 'colcon_meta'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/pose_cov_ops) by extensions ['ros']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/pose_cov_ops) by extension 'ros'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/pose_cov_ops) by extensions ['cmake', 'python']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/pose_cov_ops) by extension 'cmake'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/pose_cov_ops) by extension 'python'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/pose_cov_ops) by extensions ['python_setup_py']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/pose_cov_ops) by extension 'python_setup_py'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rotors_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rotors_simulator) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rotors_simulator) by extension 'ignore_ament_install'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rotors_simulator) by extensions ['colcon_pkg']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rotors_simulator) by extension 'colcon_pkg'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rotors_simulator) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rotors_simulator) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rotors_simulator) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rotors_simulator) by extension 'ros'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rotors_simulator) by extensions ['cmake', 'python']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rotors_simulator) by extension 'cmake'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rotors_simulator) by extension 'python'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rotors_simulator) by extensions ['python_setup_py']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rotors_simulator) by extension 'python_setup_py'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rviz_plugin_covariance) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rviz_plugin_covariance) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rviz_plugin_covariance) by extension 'ignore_ament_install'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rviz_plugin_covariance) by extensions ['colcon_pkg']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rviz_plugin_covariance) by extension 'colcon_pkg'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rviz_plugin_covariance) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rviz_plugin_covariance) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rviz_plugin_covariance) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rviz_plugin_covariance) by extension 'ros'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rviz_plugin_covariance) by extensions ['cmake', 'python']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rviz_plugin_covariance) by extension 'cmake'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rviz_plugin_covariance) by extension 'python'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rviz_plugin_covariance) by extensions ['python_setup_py']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/3rdparty/rviz_plugin_covariance) by extension 'python_setup_py'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight) by extension 'ignore_ament_install'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight) by extension 'colcon_meta'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight) by extension 'ros'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight) by extensions ['cmake', 'python']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight) by extension 'cmake'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight) by extension 'python'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight) by extensions ['python_setup_py']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight) by extension 'python_setup_py'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/CMakeModules) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/CMakeModules) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/CMakeModules) by extension 'ignore_ament_install'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/CMakeModules) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/CMakeModules) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/CMakeModules) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/CMakeModules) by extension 'colcon_meta'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/CMakeModules) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/CMakeModules) by extension 'ros'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/CMakeModules) by extensions ['cmake', 'python']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/CMakeModules) by extension 'cmake'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/CMakeModules) by extension 'python'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/CMakeModules) by extensions ['python_setup_py']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/CMakeModules) by extension 'python_setup_py'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/camera_configs) by extensions ['ignore', 'ignore_ament_install']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/camera_configs) by extension 'ignore'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/camera_configs) by extension 'ignore_ament_install'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/camera_configs) by extensions ['colcon_pkg']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/camera_configs) by extension 'colcon_pkg'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/camera_configs) by extensions ['colcon_meta']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/camera_configs) by extension 'colcon_meta'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/camera_configs) by extensions ['ros']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/camera_configs) by extension 'ros'
+[0.303s] DEBUG:colcon.colcon_core.package_identification:Package 'submodules/AirCap/packages/flight/camera_configs' with type 'ros.ament_cmake' and name 'camera_configs'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/diff_gps) by extensions ['ignore', 'ignore_ament_install']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/diff_gps) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/diff_gps) by extension 'ignore_ament_install'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/diff_gps) by extensions ['colcon_pkg']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/diff_gps) by extension 'colcon_pkg'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/diff_gps) by extensions ['colcon_meta']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/diff_gps) by extension 'colcon_meta'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/diff_gps) by extensions ['ros']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/diff_gps) by extension 'ros'
+[0.304s] DEBUG:colcon.colcon_core.package_identification:Package 'submodules/AirCap/packages/flight/diff_gps' with type 'ros.ament_cmake' and name 'diff_gps'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/generic_potential_field) by extensions ['ignore', 'ignore_ament_install']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/generic_potential_field) by extension 'ignore'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/generic_potential_field) by extension 'ignore_ament_install'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/generic_potential_field) by extensions ['colcon_pkg']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/generic_potential_field) by extension 'colcon_pkg'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/generic_potential_field) by extensions ['colcon_meta']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/generic_potential_field) by extension 'colcon_meta'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/generic_potential_field) by extensions ['ros']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/generic_potential_field) by extension 'ros'
+[0.305s] DEBUG:colcon.colcon_core.package_identification:Package 'submodules/AirCap/packages/flight/generic_potential_field' with type 'ros.ament_cmake' and name 'generic_potential_field'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/multimaster_setup) by extensions ['ignore', 'ignore_ament_install']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/multimaster_setup) by extension 'ignore'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/multimaster_setup) by extension 'ignore_ament_install'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/multimaster_setup) by extensions ['colcon_pkg']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/multimaster_setup) by extension 'colcon_pkg'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/multimaster_setup) by extensions ['colcon_meta']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/multimaster_setup) by extension 'colcon_meta'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/multimaster_setup) by extensions ['ros']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/multimaster_setup) by extension 'ros'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/multimaster_setup) by extensions ['cmake', 'python']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/multimaster_setup) by extension 'cmake'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/multimaster_setup) by extension 'python'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/multimaster_setup) by extensions ['python_setup_py']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/multimaster_setup) by extension 'python_setup_py'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/neural_network_detector) by extensions ['ignore', 'ignore_ament_install']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/neural_network_detector) by extension 'ignore'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/neural_network_detector) by extension 'ignore_ament_install'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/neural_network_detector) by extensions ['colcon_pkg']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/neural_network_detector) by extension 'colcon_pkg'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/neural_network_detector) by extensions ['colcon_meta']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/neural_network_detector) by extension 'colcon_meta'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/neural_network_detector) by extensions ['ros']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/neural_network_detector) by extension 'ros'
+[0.307s] DEBUG:colcon.colcon_core.package_identification:Package 'submodules/AirCap/packages/flight/neural_network_detector' with type 'ros.ament_cmake' and name 'neural_network_detector'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/nmpc_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/nmpc_planner) by extension 'ignore'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/nmpc_planner) by extension 'ignore_ament_install'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/nmpc_planner) by extensions ['colcon_pkg']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/nmpc_planner) by extension 'colcon_pkg'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/nmpc_planner) by extensions ['colcon_meta']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/nmpc_planner) by extension 'colcon_meta'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/nmpc_planner) by extensions ['ros']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/nmpc_planner) by extension 'ros'
+[0.308s] DEBUG:colcon.colcon_core.package_identification:Package 'submodules/AirCap/packages/flight/nmpc_planner' with type 'ros.ament_cmake' and name 'nmpc_planner'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/pose_cov_ops_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/pose_cov_ops_interface) by extension 'ignore'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/pose_cov_ops_interface) by extension 'ignore_ament_install'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/pose_cov_ops_interface) by extensions ['colcon_pkg']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/pose_cov_ops_interface) by extension 'colcon_pkg'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/pose_cov_ops_interface) by extensions ['colcon_meta']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/pose_cov_ops_interface) by extension 'colcon_meta'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/pose_cov_ops_interface) by extensions ['ros']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/pose_cov_ops_interface) by extension 'ros'
+[0.309s] DEBUG:colcon.colcon_core.package_identification:Package 'submodules/AirCap/packages/flight/pose_cov_ops_interface' with type 'ros.ament_cmake' and name 'pose_cov_ops_interface'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models) by extensions ['ignore', 'ignore_ament_install']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models) by extension 'ignore'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models) by extension 'ignore_ament_install'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models) by extensions ['colcon_pkg']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models) by extension 'colcon_pkg'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models) by extensions ['colcon_meta']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models) by extension 'colcon_meta'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models) by extensions ['ros']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models) by extension 'ros'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models) by extensions ['cmake', 'python']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models) by extension 'cmake'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models) by extension 'python'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models) by extensions ['python_setup_py']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models) by extension 'python_setup_py'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models/model_distance_from_height) by extensions ['ignore', 'ignore_ament_install']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models/model_distance_from_height) by extension 'ignore'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models/model_distance_from_height) by extension 'ignore_ament_install'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models/model_distance_from_height) by extensions ['colcon_pkg']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models/model_distance_from_height) by extension 'colcon_pkg'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models/model_distance_from_height) by extensions ['colcon_meta']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models/model_distance_from_height) by extension 'colcon_meta'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models/model_distance_from_height) by extensions ['ros']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/projection_models/model_distance_from_height) by extension 'ros'
+[0.310s] DEBUG:colcon.colcon_core.package_identification:Package 'submodules/AirCap/packages/flight/projection_models/model_distance_from_height' with type 'ros.ament_cmake' and name 'model_distance_from_height'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/target_tracker_distributed_kf) by extensions ['ignore', 'ignore_ament_install']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/target_tracker_distributed_kf) by extension 'ignore'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/target_tracker_distributed_kf) by extension 'ignore_ament_install'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/target_tracker_distributed_kf) by extensions ['colcon_pkg']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/target_tracker_distributed_kf) by extension 'colcon_pkg'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/target_tracker_distributed_kf) by extensions ['colcon_meta']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/target_tracker_distributed_kf) by extension 'colcon_meta'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/target_tracker_distributed_kf) by extensions ['ros']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/target_tracker_distributed_kf) by extension 'ros'
+[0.311s] DEBUG:colcon.colcon_core.package_identification:Package 'submodules/AirCap/packages/flight/target_tracker_distributed_kf' with type 'ros.ament_cmake' and name 'target_tracker_distributed_kf'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/tf_from_uav_pose) by extensions ['ignore', 'ignore_ament_install']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/tf_from_uav_pose) by extension 'ignore'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/tf_from_uav_pose) by extension 'ignore_ament_install'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/tf_from_uav_pose) by extensions ['colcon_pkg']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/tf_from_uav_pose) by extension 'colcon_pkg'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/tf_from_uav_pose) by extensions ['colcon_meta']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/tf_from_uav_pose) by extension 'colcon_meta'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/tf_from_uav_pose) by extensions ['ros']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/tf_from_uav_pose) by extension 'ros'
+[0.313s] DEBUG:colcon.colcon_core.package_identification:Package 'submodules/AirCap/packages/flight/tf_from_uav_pose' with type 'ros.ament_cmake' and name 'tf_from_uav_pose'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/uav_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/uav_msgs) by extension 'ignore'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/uav_msgs) by extension 'ignore_ament_install'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/uav_msgs) by extensions ['colcon_pkg']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/uav_msgs) by extension 'colcon_pkg'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/uav_msgs) by extensions ['colcon_meta']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/uav_msgs) by extension 'colcon_meta'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/uav_msgs) by extensions ['ros']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/flight/uav_msgs) by extension 'ros'
+[0.314s] DEBUG:colcon.colcon_core.package_identification:Package 'submodules/AirCap/packages/flight/uav_msgs' with type 'ros.ament_cmake' and name 'uav_msgs'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional) by extension 'ignore_ament_install'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional) by extensions ['colcon_pkg']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional) by extension 'colcon_pkg'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional) by extensions ['colcon_meta']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional) by extension 'colcon_meta'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional) by extensions ['ros']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional) by extension 'ros'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional) by extensions ['cmake', 'python']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional) by extension 'cmake'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional) by extension 'python'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional) by extensions ['python_setup_py']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional) by extension 'python_setup_py'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture) by extension 'ignore_ament_install'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture) by extensions ['colcon_pkg']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture) by extension 'colcon_pkg'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture) by extensions ['colcon_meta']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture) by extension 'colcon_meta'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture) by extensions ['ros']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture) by extension 'ros'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture) by extensions ['cmake', 'python']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture) by extension 'cmake'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture) by extension 'python'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture) by extensions ['python_setup_py']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture) by extension 'python_setup_py'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture/Grab) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture/Grab) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture/Grab) by extension 'ignore_ament_install'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture/Grab) by extensions ['colcon_pkg']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture/Grab) by extension 'colcon_pkg'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture/Grab) by extensions ['colcon_meta']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture/Grab) by extension 'colcon_meta'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture/Grab) by extensions ['ros']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture/Grab) by extension 'ros'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/basler_image_capture/Grab) ignored
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/gcs_visualization) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/gcs_visualization) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/gcs_visualization) by extension 'ignore_ament_install'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/gcs_visualization) by extensions ['colcon_pkg']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/gcs_visualization) by extension 'colcon_pkg'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/gcs_visualization) by extensions ['colcon_meta']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/gcs_visualization) by extension 'colcon_meta'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/gcs_visualization) by extensions ['ros']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/gcs_visualization) by extension 'ros'
+[0.316s] DEBUG:colcon.colcon_core.package_identification:Package 'submodules/AirCap/packages/optional/gcs_visualization' with type 'ros.ament_cmake' and name 'gcs_visualization'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture) by extensions ['ignore', 'ignore_ament_install']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture) by extension 'ignore'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture) by extension 'ignore_ament_install'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture) by extensions ['colcon_pkg']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture) by extension 'colcon_pkg'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture) by extensions ['colcon_meta']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture) by extension 'colcon_meta'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture) by extensions ['ros']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture) by extension 'ros'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture) by extensions ['cmake', 'python']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture) by extension 'cmake'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture) by extension 'python'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture) by extensions ['python_setup_py']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture) by extension 'python_setup_py'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture/Grab) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture/Grab) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture/Grab) by extension 'ignore_ament_install'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture/Grab) by extensions ['colcon_pkg']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture/Grab) by extension 'colcon_pkg'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture/Grab) by extensions ['colcon_meta']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture/Grab) by extension 'colcon_meta'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture/Grab) by extensions ['ros']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture/Grab) by extension 'ros'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/optional/ptgrey_image_capture/Grab) ignored
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay) by extension 'ignore_ament_install'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay) by extensions ['colcon_pkg']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay) by extension 'colcon_pkg'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay) by extensions ['colcon_meta']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay) by extension 'colcon_meta'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay) by extensions ['ros']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay) by extension 'ros'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay) by extensions ['cmake', 'python']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay) by extension 'cmake'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay) by extension 'python'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay) by extensions ['python_setup_py']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay) by extension 'python_setup_py'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only) by extension 'colcon_pkg'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only) by extensions ['colcon_meta']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only) by extension 'colcon_meta'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only) by extension 'ros'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only) by extensions ['cmake', 'python']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only) by extension 'cmake'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only) by extension 'python'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only) by extensions ['python_setup_py']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only) by extension 'python_setup_py'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only/Grab) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only/Grab) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only/Grab) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only/Grab) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only/Grab) by extension 'colcon_pkg'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only/Grab) by extensions ['colcon_meta']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only/Grab) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only/Grab) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only/Grab) by extension 'ros'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/replay/video_replay_only/Grab) ignored
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation) by extension 'ignore'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation) by extension 'ignore_ament_install'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation) by extensions ['colcon_pkg']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation) by extension 'ros'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation) by extensions ['cmake', 'python']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation) by extension 'cmake'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation) by extension 'python'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation) by extensions ['python_setup_py']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation) by extension 'python_setup_py'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/Gazebo_Plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/Gazebo_Plugins) by extension 'ignore'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/Gazebo_Plugins) by extension 'ignore_ament_install'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/Gazebo_Plugins) by extensions ['colcon_pkg']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/Gazebo_Plugins) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/Gazebo_Plugins) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/Gazebo_Plugins) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/Gazebo_Plugins) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/Gazebo_Plugins) by extension 'ros'
+[0.320s] DEBUG:colcon.colcon_core.package_identification:Package 'submodules/AirCap/packages/simulation/Gazebo_Plugins' with type 'ros.ament_cmake' and name 'aircap_gazebo_plugins'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/aircap) by extensions ['ignore', 'ignore_ament_install']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/aircap) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/aircap) by extension 'ignore_ament_install'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/aircap) by extensions ['colcon_pkg']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/aircap) by extension 'colcon_pkg'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/aircap) by extensions ['colcon_meta']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/aircap) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/aircap) by extensions ['ros']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/aircap) by extension 'ros'
+[0.321s] DEBUG:colcon.colcon_core.package_identification:Package 'submodules/AirCap/packages/simulation/aircap' with type 'ros.ament_cmake' and name 'aircap'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/fake_communication_failure) by extensions ['ignore', 'ignore_ament_install']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/fake_communication_failure) by extension 'ignore'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/fake_communication_failure) by extension 'ignore_ament_install'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/fake_communication_failure) by extensions ['colcon_pkg']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/fake_communication_failure) by extension 'colcon_pkg'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/fake_communication_failure) by extensions ['colcon_meta']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/fake_communication_failure) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/fake_communication_failure) by extensions ['ros']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/fake_communication_failure) by extension 'ros'
+[0.322s] DEBUG:colcon.colcon_core.package_identification:Package 'submodules/AirCap/packages/simulation/fake_communication_failure' with type 'ros.ament_cmake' and name 'fake_communication_failure'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/fake_gps_drift) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/fake_gps_drift) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/fake_gps_drift) by extension 'ignore_ament_install'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/fake_gps_drift) by extensions ['colcon_pkg']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/fake_gps_drift) by extension 'colcon_pkg'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/fake_gps_drift) by extensions ['colcon_meta']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/fake_gps_drift) by extension 'colcon_meta'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/fake_gps_drift) by extensions ['ros']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/fake_gps_drift) by extension 'ros'
+[0.323s] DEBUG:colcon.colcon_core.package_identification:Package 'submodules/AirCap/packages/simulation/fake_gps_drift' with type 'ros.ament_cmake' and name 'fake_gps_drift'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/librepilot_gazebo_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/librepilot_gazebo_bridge) by extension 'ignore'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/librepilot_gazebo_bridge) by extension 'ignore_ament_install'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/librepilot_gazebo_bridge) by extensions ['colcon_pkg']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/librepilot_gazebo_bridge) by extension 'colcon_pkg'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/librepilot_gazebo_bridge) by extensions ['colcon_meta']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/librepilot_gazebo_bridge) by extension 'colcon_meta'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/librepilot_gazebo_bridge) by extensions ['ros']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/librepilot_gazebo_bridge) by extension 'ros'
+[0.324s] DEBUG:colcon.colcon_core.package_identification:Package 'submodules/AirCap/packages/simulation/librepilot_gazebo_bridge' with type 'ros.ament_cmake' and name 'librepilot_gazebo_bridge'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/random_moving_target) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/random_moving_target) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/random_moving_target) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/random_moving_target) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/random_moving_target) by extension 'colcon_pkg'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/random_moving_target) by extensions ['colcon_meta']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/random_moving_target) by extension 'colcon_meta'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/random_moving_target) by extensions ['ros']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/packages/simulation/random_moving_target) by extension 'ros'
+[0.325s] DEBUG:colcon.colcon_core.package_identification:Package 'submodules/AirCap/packages/simulation/random_moving_target' with type 'ros.ament_cmake' and name 'random_moving_target'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts) by extensions ['colcon_pkg']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts) by extension 'colcon_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts) by extensions ['colcon_meta']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts) by extensions ['ros']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts) by extension 'ros'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts) by extensions ['cmake', 'python']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts) by extension 'cmake'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts) by extension 'python'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts) by extensions ['python_setup_py']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts) by extension 'python_setup_py'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/groundstation) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/groundstation) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/groundstation) by extension 'ignore_ament_install'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/groundstation) by extensions ['colcon_pkg']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/groundstation) by extension 'colcon_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/groundstation) by extensions ['colcon_meta']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/groundstation) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/groundstation) by extensions ['ros']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/groundstation) by extension 'ros'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/groundstation) by extensions ['cmake', 'python']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/groundstation) by extension 'cmake'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/groundstation) by extension 'python'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/groundstation) by extensions ['python_setup_py']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/groundstation) by extension 'python_setup_py'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/on_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/on_robot) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/on_robot) by extension 'ignore_ament_install'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/on_robot) by extensions ['colcon_pkg']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/on_robot) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/on_robot) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/on_robot) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/on_robot) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/on_robot) by extension 'ros'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/on_robot) by extensions ['cmake', 'python']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/on_robot) by extension 'cmake'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/on_robot) by extension 'python'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/on_robot) by extensions ['python_setup_py']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/on_robot) by extension 'python_setup_py'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/simulation) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/simulation) by extension 'ignore_ament_install'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/simulation) by extensions ['colcon_pkg']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/simulation) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/simulation) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/simulation) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/simulation) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/simulation) by extension 'ros'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/simulation) by extensions ['cmake', 'python']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/simulation) by extension 'cmake'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/simulation) by extension 'python'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/simulation) by extensions ['python_setup_py']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/AirCap/scripts/simulation) by extension 'python_setup_py'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/pytorch_ssd_server) by extensions ['ignore', 'ignore_ament_install']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/pytorch_ssd_server) by extension 'ignore'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/pytorch_ssd_server) by extension 'ignore_ament_install'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/pytorch_ssd_server) by extensions ['colcon_pkg']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/pytorch_ssd_server) by extension 'colcon_pkg'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/pytorch_ssd_server) by extensions ['colcon_meta']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/pytorch_ssd_server) by extension 'colcon_meta'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/pytorch_ssd_server) by extensions ['ros']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/pytorch_ssd_server) by extension 'ros'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/pytorch_ssd_server) by extensions ['cmake', 'python']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/pytorch_ssd_server) by extension 'cmake'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/pytorch_ssd_server) by extension 'python'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/pytorch_ssd_server) by extensions ['python_setup_py']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(submodules/pytorch_ssd_server) by extension 'python_setup_py'
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'aircap' in 'submodules/AirCap/packages/simulation/aircap'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'aircap_gazebo_plugins' in 'submodules/AirCap/packages/simulation/Gazebo_Plugins'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'blimp_nmpc_wrapper_node' in 'src/blimp_nmpc_wrapper_node'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'camera_configs' in 'submodules/AirCap/packages/flight/camera_configs'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'diff_gps' in 'submodules/AirCap/packages/flight/diff_gps'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'fake_communication_failure' in 'submodules/AirCap/packages/simulation/fake_communication_failure'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'fake_gps_drift' in 'submodules/AirCap/packages/simulation/fake_gps_drift'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'nmpc_blimp_formation_optimizer' in 'src/codegen/nmpc_blimp_formation_optimizer'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'nmpc_blimp_formation_planner' in 'src/nmpc_blimp_formation_planner'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'pose_cov_ops_interface' in 'submodules/AirCap/packages/flight/pose_cov_ops_interface'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'random_moving_target' in 'submodules/AirCap/packages/simulation/random_moving_target'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'uav_msgs' in 'submodules/AirCap/packages/flight/uav_msgs'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'gcs_visualization' in 'submodules/AirCap/packages/optional/gcs_visualization'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'generic_potential_field' in 'submodules/AirCap/packages/flight/generic_potential_field'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'librepilot_gazebo_bridge' in 'submodules/AirCap/packages/simulation/librepilot_gazebo_bridge'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'model_distance_from_height' in 'submodules/AirCap/packages/flight/projection_models/model_distance_from_height'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'target_tracker_distributed_kf' in 'submodules/AirCap/packages/flight/target_tracker_distributed_kf'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tf_from_uav_pose' in 'submodules/AirCap/packages/flight/tf_from_uav_pose'
+[0.374s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'nmpc_planner' in 'submodules/AirCap/packages/flight/nmpc_planner'
+[0.375s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.375s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.379s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 273 installed packages in /opt/ros/humble
+[0.379s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'neural_network_detector' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'neural_network_detector' build argument 'cmake_target' from command line to 'None'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'neural_network_detector' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'neural_network_detector' build argument 'cmake_clean_cache' from command line to 'False'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'neural_network_detector' build argument 'cmake_clean_first' from command line to 'False'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'neural_network_detector' build argument 'cmake_force_configure' from command line to 'False'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'neural_network_detector' build argument 'ament_cmake_args' from command line to 'None'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'neural_network_detector' build argument 'catkin_cmake_args' from command line to 'None'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'neural_network_detector' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.434s] DEBUG:colcon.colcon_core.verb:Building package 'neural_network_detector' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/Edited_AirshipMPC/install/neural_network_detector', 'merge_install': False, 'path': '/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector', 'symlink_install': True, 'test_result_base': None}
+[0.434s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.435s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.436s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector' with build type 'ament_cmake'
+[0.436s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector'
+[0.441s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.441s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.441s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.449s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Edited_AirshipMPC/install/neural_network_detector
+[3.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Edited_AirshipMPC/install/neural_network_detector
+[3.372s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/Edited_AirshipMPC/build/neural_network_detector -- -j4 -l4
+[15.168s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/Edited_AirshipMPC/build/neural_network_detector -- -j4 -l4
+[15.168s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(neural_network_detector)
+[15.173s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Edited_AirshipMPC/install/neural_network_detector' for CMake module files
+[15.173s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Edited_AirshipMPC/install/neural_network_detector' for CMake config files
+[15.174s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Edited_AirshipMPC/install/neural_network_detector/bin'
+[15.174s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Edited_AirshipMPC/install/neural_network_detector/lib/pkgconfig/neural_network_detector.pc'
+[15.174s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Edited_AirshipMPC/install/neural_network_detector/lib/python3.11/site-packages'
+[15.174s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/Edited_AirshipMPC/install/neural_network_detector/bin'
+[15.174s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Edited_AirshipMPC/install/neural_network_detector/share/neural_network_detector/package.ps1'
+[15.175s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/Edited_AirshipMPC/install/neural_network_detector/share/neural_network_detector/package.dsv'
+[15.176s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Edited_AirshipMPC/install/neural_network_detector/share/neural_network_detector/package.sh'
+[15.176s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Edited_AirshipMPC/install/neural_network_detector/share/neural_network_detector/package.bash'
+[15.177s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/Edited_AirshipMPC/install/neural_network_detector/share/neural_network_detector/package.zsh'
+[15.178s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/Edited_AirshipMPC/install/neural_network_detector/share/colcon-core/packages/neural_network_detector)
+[15.188s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[15.189s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[15.189s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[15.189s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[18.458s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify2': 'notify2' not found
+[18.458s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[18.459s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[18.459s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[18.459s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[18.459s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/Edited_AirshipMPC/install/local_setup.ps1'
+[18.460s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/Edited_AirshipMPC/install/_local_setup_util_ps1.py'
+[18.461s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/Edited_AirshipMPC/install/setup.ps1'
+[18.462s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/Edited_AirshipMPC/install/local_setup.sh'
+[18.462s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/Edited_AirshipMPC/install/_local_setup_util_sh.py'
+[18.463s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/Edited_AirshipMPC/install/setup.sh'
+[18.463s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/Edited_AirshipMPC/install/local_setup.bash'
+[18.464s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/Edited_AirshipMPC/install/setup.bash'
+[18.464s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/Edited_AirshipMPC/install/local_setup.zsh'
+[18.465s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/Edited_AirshipMPC/install/setup.zsh'

@@ -1,0 +1,970 @@
+[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+  Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+  rosidl_target_interfaces()
+Call Stack (most recent call first):
+  CMakeLists.txt:52 (rosidl_target_interfaces)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+  Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+  rosidl_target_interfaces()
+Call Stack (most recent call first):
+  CMakeLists.txt:59 (rosidl_target_interfaces)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+  Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+  rosidl_target_interfaces()
+Call Stack (most recent call first):
+  CMakeLists.txt:66 (rosidl_target_interfaces)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+  Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+  rosidl_target_interfaces()
+Call Stack (most recent call first):
+  CMakeLists.txt:73 (rosidl_target_interfaces)
+
+[0m
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/Overlay.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Kros/callback_queue.h: No such file or directory
+    8 | #include [01;31m[K<ros/callback_queue.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/Overlay.dir/build.make:76: CMakeFiles/Overlay.dir/src/Overlay.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:628: CMakeFiles/Overlay.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:28:9:[m[K [01;31m[Kerror: [m[Knon-static data member declared with placeholder ‘[01m[Kauto[m[K’
+   28 |         [01;31m[Kauto[m[K pnh_ = rclcpp::Node::make_shared("node_name"){"~"}, nh_;
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:28:9:[m[K [01;31m[Kerror: [m[Knon-static data member declared with placeholder ‘[01m[Kauto[m[K’
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:29:50:[m[K [01;31m[Kerror: [m[K‘[01m[KImage[m[K’ is not a member of ‘[01m[Ksensor_msgs[m[K’; did you mean ‘[01m[Ksensor_msgs::msg::Image[m[K’?
+   29 |         message_filters::Subscriber<sensor_msgs::[01;31m[KImage[m[K> img_sub_;
+      |                                                  [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp:7[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:9[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp:208:7:[m[K [01;36m[Knote: [m[K‘[01m[Ksensor_msgs::msg::Image[m[K’ declared here
+  208 | using [01;36m[KImage[m[K =
+      |       [01;36m[K^~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:29:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   29 |         message_filters::Subscriber<sensor_msgs::Image[01;31m[K>[m[K img_sub_;
+      |                                                       [01;31m[K^[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:30:37:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkFeedback[m[K’ was not declared in this scope; did you mean ‘[01m[Kneural_network_detector::msg::NeuralNetworkFeedback[m[K’?
+   30 |         message_filters::Subscriber<[01;31m[KNeuralNetworkFeedback[m[K> feedback_sub_;
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                     [32m[Kneural_network_detector::msg::NeuralNetworkFeedback[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_generator_cpp/neural_network_detector/msg/neural_network_feedback.hpp:7[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:14[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_generator_cpp/neural_network_detector/msg/detail/neural_network_feedback__struct.hpp:223:7:[m[K [01;36m[Knote: [m[K‘[01m[Kneural_network_detector::msg::NeuralNetworkFeedback[m[K’ declared here
+  223 | using [01;36m[KNeuralNetworkFeedback[m[K =
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:30:58:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   30 |         message_filters::Subscriber<NeuralNetworkFeedback[01;31m[K>[m[K feedback_sub_;
+      |                                                          [01;31m[K^[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:31:32:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkFeedback[m[K’ was not declared in this scope; did you mean ‘[01m[Kneural_network_detector::msg::NeuralNetworkFeedback[m[K’?
+   31 |         message_filters::Cache<[01;31m[KNeuralNetworkFeedback[m[K> feedback_cache_;
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                [32m[Kneural_network_detector::msg::NeuralNetworkFeedback[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_generator_cpp/neural_network_detector/msg/neural_network_feedback.hpp:7[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:14[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_generator_cpp/neural_network_detector/msg/detail/neural_network_feedback__struct.hpp:223:7:[m[K [01;36m[Knote: [m[K‘[01m[Kneural_network_detector::msg::NeuralNetworkFeedback[m[K’ declared here
+  223 | using [01;36m[KNeuralNetworkFeedback[m[K =
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:31:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   31 |         message_filters::Cache<NeuralNetworkFeedback[01;31m[K>[m[K feedback_cache_;
+      |                                                     [01;31m[K^[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:32:37:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkDetectionArray[m[K’ was not declared in this scope; did you mean ‘[01m[Kneural_network_detector::msg::NeuralNetworkDetectionArray[m[K’?
+   32 |         message_filters::Subscriber<[01;31m[KNeuralNetworkDetectionArray[m[K> detections_sub_;
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                     [32m[Kneural_network_detector::msg::NeuralNetworkDetectionArray[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_generator_cpp/neural_network_detector/msg/neural_network_detection_array.hpp:7[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:13[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_generator_cpp/neural_network_detector/msg/detail/neural_network_detection_array__struct.hpp:133:7:[m[K [01;36m[Knote: [m[K‘[01m[Kneural_network_detector::msg::NeuralNetworkDetectionArray[m[K’ declared here
+  133 | using [01;36m[KNeuralNetworkDetectionArray[m[K =
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:32:64:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   32 |      message_filters::Subscriber<NeuralNetworkDetectionArray[01;31m[K>[m[K detections_sub_;
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:33:70:[m[K [01;31m[Kerror: [m[K‘[01m[KImage[m[K’ is not a member of ‘[01m[Ksensor_msgs[m[K’; did you mean ‘[01m[Ksensor_msgs::msg::Image[m[K’?
+   33 | td::unique_ptr< message_filters::TimeSequencer<sensor_msgs::[01;31m[KImage[m[K> > pimg_delayer_;
+      |                                                             [01;31m[K^~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp:7[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:9[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp:208:7:[m[K [01;36m[Knote: [m[K‘[01m[Ksensor_msgs::msg::Image[m[K’ declared here
+  208 | using [01;36m[KImage[m[K =
+      |       [01;36m[K^~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:33:75:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   33 | nique_ptr< message_filters::TimeSequencer<sensor_msgs::Image[01;31m[K>[m[K > pimg_delayer_;
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:33:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   33 | que_ptr< message_filters::TimeSequencer<sensor_msgs::Image> [01;31m[K>[m[K pimg_delayer_;
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:33:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:34:60:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkDetectionArray[m[K’ was not declared in this scope; did you mean ‘[01m[Kneural_network_detector::msg::NeuralNetworkDetectionArray[m[K’?
+   34 |         std::unique_ptr< message_filters::TimeSynchronizer<[01;31m[KNeuralNetworkDetectionArray[m[K, sensor_msgs::Image> > pimg_detection_sync_;
+      |                                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                            [32m[Kneural_network_detector::msg::NeuralNetworkDetectionArray[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_generator_cpp/neural_network_detector/msg/neural_network_detection_array.hpp:7[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:13[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_generator_cpp/neural_network_detector/msg/detail/neural_network_detection_array__struct.hpp:133:7:[m[K [01;36m[Knote: [m[K‘[01m[Kneural_network_detector::msg::NeuralNetworkDetectionArray[m[K’ declared here
+  133 | using [01;36m[KNeuralNetworkDetectionArray[m[K =
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:34:102:[m[K [01;31m[Kerror: [m[K‘[01m[KImage[m[K’ is not a member of ‘[01m[Ksensor_msgs[m[K’; did you mean ‘[01m[Ksensor_msgs::msg::Image[m[K’?
+   34 | :TimeSynchronizer<NeuralNetworkDetectionArray, sensor_msgs::[01;31m[KImage[m[K> > pimg_detection_sync_;
+      |                                                             [01;31m[K^~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp:7[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:9[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp:208:7:[m[K [01;36m[Knote: [m[K‘[01m[Ksensor_msgs::msg::Image[m[K’ declared here
+  208 | using [01;36m[KImage[m[K =
+      |       [01;36m[K^~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:34:107:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   34 | Synchronizer<NeuralNetworkDetectionArray, sensor_msgs::Image[01;31m[K>[m[K > pimg_detection_sync_;
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:34:107:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:34:109:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   34 | nchronizer<NeuralNetworkDetectionArray, sensor_msgs::Image> [01;31m[K>[m[K pimg_detection_sync_;
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:34:109:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:36:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ was not declared in this scope; did you mean ‘[01m[Kcos[m[K’?
+   36 |         std::map<[01;31m[Kros[m[K::Time, NeuralNetworkDetectionArray> stamp_detection_map_;
+      |                  [01;31m[K^~~[m[K
+      |                  [32m[Kcos[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:36:56:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (1, should be at least 2)
+   36 |         std::map<ros::Time, NeuralNetworkDetectionArray[01;31m[K>[m[K stamp_detection_map_;
+      |                                                        [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/11/map:61[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:8[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:5[m[K:
+[01m[K/usr/include/c++/11/bits/stl_map.h:100:11:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> class std::map[m[K’
+  100 |     class [01;36m[Kmap[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:40:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type
+   40 |         [01;31m[Kros[m[K::Duration timeout_;
+      |         [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:48:47:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkDetectionArray[m[K’ does not name a type
+   48 |         void draw_detections(cv::Mat &, const [01;31m[KNeuralNetworkDetectionArray[m[K *);
+      |                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:59:50:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkDetectionArrayConstPtr[m[K’ does not name a type
+   59 |         void registerNewDetectionImagePair(const [01;31m[KNeuralNetworkDetectionArrayConstPtr[m[K &, const sensor_msgs::ImageConstPtr &);
+      |                                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:59:108:[m[K [01;31m[Kerror: [m[K‘[01m[KImageConstPtr[m[K’ in namespace ‘[01m[Ksensor_msgs[m[K’ does not name a type
+   59 | t NeuralNetworkDetectionArrayConstPtr &, const sensor_msgs::[01;31m[KImageConstPtr[m[K &);
+      |                                                             [01;31m[K^~~~~~~~~~~~~[m[K
+
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/Overlay.h:60:45:[m[K [01;31m[Kerror: [m[K‘[01m[KImageConstPtr[m[K’ in namespace ‘[01m[Ksensor_msgs[m[K’ does not name a type
+   60 |         void imgCallback(const sensor_msgs::[01;31m[KImageConstPtr[m[K &);
+      |                                             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_overlay_only.cpp:13:18:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+   13 |     rclcpp::spin([01;31m[Knode[m[K);
+      |                  [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/neural_network_detector_overlay_only.dir/build.make:76: CMakeFiles/neural_network_detector_overlay_only.dir/src/neural_network_detector_overlay_only.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:684: CMakeFiles/neural_network_detector_overlay_only.dir/all] Error 2
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:37:30:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkFeedback[m[K’ does not name a type
+   37 | cv::Rect get_crop_area(const [01;31m[KNeuralNetworkFeedback[m[K &latest_feedback, const cv::Size2i &original_resolution, const cv::Size2i &desired_resolution, float aspect_ratio, cv::projection2i& proj_crop, bool timed_out);
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:43:3:[m[K [01;31m[Kerror: [m[Knon-static data member declared with placeholder ‘[01m[Kauto[m[K’
+   43 |   [01;31m[Kauto[m[K pnh_ = rclcpp::Node::make_shared("node_name"){"~"}, nh_;
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:43:3:[m[K [01;31m[Kerror: [m[Knon-static data member declared with placeholder ‘[01m[Kauto[m[K’
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:49:21:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (0, should be at least 1)
+   49 |   rclcpp::Publisher<[01;31m[K>[m[K::SharedPtr detection_pub_;
+      |                     [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:8[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:77:7:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class MessageT, class AllocatorT> class rclcpp::Publisher[m[K’
+   77 | class [01;36m[KPublisher[m[K : public PublisherBase
+      |       [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:49:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   49 |   rclcpp::Publisher<>::[01;31m[KSharedPtr[m[K detection_pub_;
+      |                        [01;31m[K^~~~~~~~~[m[K
+      |                                 [32m[K;[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:49:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetection_pub_[m[K’ does not name a type; did you mean ‘[01m[Kdetection_info[m[K’?
+   49 |   rclcpp::Publisher<>::SharedPtr [01;31m[Kdetection_pub_[m[K;
+      |                                  [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                  [32m[Kdetection_info[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:51:24:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (0, should be at least 1)
+   51 |   rclcpp::Subscription<[01;31m[K>[m[K::SharedPtr feedback_sub_;
+      |                        [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:8[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:75:7:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class MessageT, class AllocatorT, class SubscribedT, class ROSMessageT, class MessageMemoryStrategyT> class rclcpp::Subscription[m[K’
+   75 | class [01;36m[KSubscription[m[K : public SubscriptionBase
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:51:27:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   51 |   rclcpp::Subscription<>::[01;31m[KSharedPtr[m[K feedback_sub_;
+      |                           [01;31m[K^~~~~~~~~[m[K
+      |                                    [32m[K;[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:51:27:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint neural_network_detector::NNDetector::SharedPtr[m[K’
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:49:24:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint neural_network_detector::NNDetector::SharedPtr[m[K’
+   49 |   rclcpp::Publisher<>::[01;36m[KSharedPtr[m[K detection_pub_;
+      |                        [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_node.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:37:30:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkFeedback[m[K’ does not name a type
+   37 | cv::Rect get_crop_area(const [01;31m[KNeuralNetworkFeedback[m[K &latest_feedback, const cv::Size2i &original_resolution, const cv::Size2i &desired_resolution, float aspect_ratio, cv::projection2i& proj_crop, bool timed_out);
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:51:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeedback_sub_[m[K’ does not name a type
+   51 |   rclcpp::Subscription<>::SharedPtr [01;31m[Kfeedback_sub_[m[K;
+      |                                     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:52:28:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkFeedback[m[K’ in namespace ‘[01m[Kneural_network_detector[m[K’ does not name a type
+   52 |   neural_network_detector::[01;31m[KNeuralNetworkFeedback[m[K latest_feedback_;
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_node.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:43:3:[m[K [01;31m[Kerror: [m[Knon-static data member declared with placeholder ‘[01m[Kauto[m[K’
+   43 |   [01;31m[Kauto[m[K pnh_ = rclcpp::Node::make_shared("node_name"){"~"}, nh_;
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:43:3:[m[K [01;31m[Kerror: [m[Knon-static data member declared with placeholder ‘[01m[Kauto[m[K’
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:53:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type
+   53 |   [01;31m[Kros[m[K::Duration timeout_;
+      |   [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:54:21:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (0, should be at least 1)
+   54 |   rclcpp::Publisher<[01;31m[K>[m[K::SharedPtr detection_amount_pub_;
+      |                     [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:8[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:77:7:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class MessageT, class AllocatorT> class rclcpp::Publisher[m[K’
+   77 | class [01;36m[KPublisher[m[K : public PublisherBase
+      |       [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:54:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   54 |   rclcpp::Publisher<>::[01;31m[KSharedPtr[m[K detection_amount_pub_;
+      |                        [01;31m[K^~~~~~~~~[m[K
+      |                                 [32m[K;[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:54:24:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint neural_network_detector::NNDetector::SharedPtr[m[K’
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:49:24:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint neural_network_detector::NNDetector::SharedPtr[m[K’
+   49 |   rclcpp::Publisher<>::[01;36m[KSharedPtr[m[K detection_pub_;
+      |                        [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:49:21:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (0, should be at least 1)
+   49 |   rclcpp::Publisher<[01;31m[K>[m[K::SharedPtr detection_pub_;
+      |                     [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:8[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_node.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:77:7:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class MessageT, class AllocatorT> class rclcpp::Publisher[m[K’
+   77 | class [01;36m[KPublisher[m[K : public PublisherBase
+      |       [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_node.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:49:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   49 |   rclcpp::Publisher<>::[01;31m[KSharedPtr[m[K detection_pub_;
+      |                        [01;31m[K^~~~~~~~~[m[K
+      |                                 [32m[K;[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:54:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetection_amount_pub_[m[K’ does not name a type
+   54 |   rclcpp::Publisher<>::SharedPtr [01;31m[Kdetection_amount_pub_[m[K;
+      |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:61:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+   61 |   bool connectMultiple([01;31m[Kros[m[K::Rate sleeper, int tries);
+      |                        [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:61:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Ksleeper[m[K’
+   61 |   bool connectMultiple(ros::Rate [01;31m[Ksleeper[m[K, int tries);
+      |                                  [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:49:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetection_pub_[m[K’ does not name a type; did you mean ‘[01m[Kdetection_info[m[K’?
+   49 |   rclcpp::Publisher<>::SharedPtr [01;31m[Kdetection_pub_[m[K;
+      |                                  [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                  [32m[Kdetection_info[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:51:24:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (0, should be at least 1)
+   51 |   rclcpp::Subscription<[01;31m[K>[m[K::SharedPtr feedback_sub_;
+      |                        [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:8[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_node.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:75:7:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class MessageT, class AllocatorT, class SubscribedT, class ROSMessageT, class MessageMemoryStrategyT> class rclcpp::Subscription[m[K’
+   75 | class [01;36m[KSubscription[m[K : public SubscriptionBase
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_node.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:51:27:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   51 |   rclcpp::Subscription<>::[01;31m[KSharedPtr[m[K feedback_sub_;
+      |                           [01;31m[K^~~~~~~~~[m[K
+      |                                    [32m[K;[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:51:27:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint neural_network_detector::NNDetector::SharedPtr[m[K’
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:49:24:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint neural_network_detector::NNDetector::SharedPtr[m[K’
+   49 |   rclcpp::Publisher<>::[01;36m[KSharedPtr[m[K detection_pub_;
+      |                        [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:71:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ was not declared in this scope; did you mean ‘[01m[Kcos[m[K’?
+   71 |   std::unique_ptr<[01;31m[Kros[m[K::Rate> max_update_rate;
+      |                   [01;31m[K^~~[m[K
+      |                   [32m[Kcos[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:71:28:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   71 |   std::unique_ptr<ros::Rate[01;31m[K>[m[K max_update_rate;
+      |                            [01;31m[K^[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:71:28:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:77:39:[m[K [01;31m[Kerror: [m[K‘[01m[KImageConstPtr[m[K’ in namespace ‘[01m[Ksensor_msgs[m[K’ does not name a type
+   77 |   void imgCallback(const sensor_msgs::[01;31m[KImageConstPtr[m[K &);
+      |                                       [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:83:56:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkFeedbackConstPtr[m[K’ in namespace ‘[01m[Kneural_network_detector[m[K’ does not name a type
+   83 |   void feedbackCallback(const neural_network_detector::[01;31m[KNeuralNetworkFeedbackConstPtr[m[K& msg);
+      |                                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:51:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeedback_sub_[m[K’ does not name a type
+   51 |   rclcpp::Subscription<>::SharedPtr [01;31m[Kfeedback_sub_[m[K;
+      |                                     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:52:28:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkFeedback[m[K’ in namespace ‘[01m[Kneural_network_detector[m[K’ does not name a type
+   52 |   neural_network_detector::[01;31m[KNeuralNetworkFeedback[m[K latest_feedback_;
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:53:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type
+   53 |   [01;31m[Kros[m[K::Duration timeout_;
+      |   [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:54:21:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (0, should be at least 1)
+   54 |   rclcpp::Publisher<[01;31m[K>[m[K::SharedPtr detection_amount_pub_;
+      |                     [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:8[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_node.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:77:7:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class MessageT, class AllocatorT> class rclcpp::Publisher[m[K’
+   77 | class [01;36m[KPublisher[m[K : public PublisherBase
+      |       [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_node.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:54:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   54 |   rclcpp::Publisher<>::[01;31m[KSharedPtr[m[K detection_amount_pub_;
+      |                        [01;31m[K^~~~~~~~~[m[K
+      |                                 [32m[K;[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:54:24:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint neural_network_detector::NNDetector::SharedPtr[m[K’
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:49:24:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint neural_network_detector::NNDetector::SharedPtr[m[K’
+   49 |   rclcpp::Publisher<>::[01;36m[KSharedPtr[m[K detection_pub_;
+      |                        [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:54:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetection_amount_pub_[m[K’ does not name a type
+   54 |   rclcpp::Publisher<>::SharedPtr [01;31m[Kdetection_amount_pub_[m[K;
+      |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:61:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+   61 |   bool connectMultiple([01;31m[Kros[m[K::Rate sleeper, int tries);
+      |                        [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:61:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Ksleeper[m[K’
+   61 |   bool connectMultiple(ros::Rate [01;31m[Ksleeper[m[K, int tries);
+      |                                  [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:71:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ was not declared in this scope; did you mean ‘[01m[Kcos[m[K’?
+   71 |   std::unique_ptr<[01;31m[Kros[m[K::Rate> max_update_rate;
+      |                   [01;31m[K^~~[m[K
+      |                   [32m[Kcos[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:71:28:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   71 |   std::unique_ptr<ros::Rate[01;31m[K>[m[K max_update_rate;
+      |                            [01;31m[K^[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:71:28:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:77:39:[m[K [01;31m[Kerror: [m[K‘[01m[KImageConstPtr[m[K’ in namespace ‘[01m[Ksensor_msgs[m[K’ does not name a type
+   77 |   void imgCallback(const sensor_msgs::[01;31m[KImageConstPtr[m[K &);
+      |                                       [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:83:56:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkFeedbackConstPtr[m[K’ in namespace ‘[01m[Kneural_network_detector[m[K’ does not name a type
+   83 |   void feedbackCallback(const neural_network_detector::[01;31m[KNeuralNetworkFeedbackConstPtr[m[K& msg);
+      |                                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:8[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_node.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_node.cpp:12:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+   12 |     RCLCPP_WARN([01;31m[Knode[m[K->get_logger(), "Usage: rosrun neural_network_detector neural_network_detector_node HOST PORT");
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_node.cpp:12:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   12 |     [01;31m[KRCLCPP_WARN[m[K(node->get_logger(), "Usage: rosrun neural_network_detector neural_network_detector_node HOST PORT");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_node.cpp:12:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   12 |     [01;31m[KRCLCPP_WARN[m[K(node->get_logger(), "Usage: rosrun neural_network_detector neural_network_detector_node HOST PORT");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_node.cpp:12:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   12 |     [01;31m[KRCLCPP_WARN[m[K(node->get_logger(), "Usage: rosrun neural_network_detector neural_network_detector_node HOST PORT");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/neural_network_detector_node.cpp:18:16:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+   18 |   rclcpp::spin([01;31m[Knode[m[K);
+      |                [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:14:30:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkFeedback[m[K’ does not name a type
+   14 | cv::Rect get_crop_area(const [01;31m[KNeuralNetworkFeedback[m[K &latest_feedback, const cv::Size2i &original_resolution, const cv::Size2i &desired_resolution, float aspect_ratio, cv::projection2i& proj_crop, const bool timed_out=false) {
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:[m[K In function ‘[01m[Kcv::Rect neural_network_detector::get_crop_area(const int&, const Size2i&, const Size2i&, float, cv::projection2i&, bool)[m[K’:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:17:35:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kymin[m[K’ in ‘[01m[Klatest_feedback[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   17 |   if(timed_out || latest_feedback.[01;31m[Kymin[m[K > original_resolution.height || latest_feedback.ymax < 0) {
+      |                                   [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:17:88:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kymax[m[K’ in ‘[01m[Klatest_feedback[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   17 |   if(timed_out || latest_feedback.ymin > original_resolution.height || latest_feedback.[01;31m[Kymax[m[K < 0) {
+      |                                                                                        [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:41:54:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kymin[m[K’ in ‘[01m[Klatest_feedback[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   41 |     int16_t ymin = std::max<int16_t>(latest_feedback.[01;31m[Kymin[m[K, 0);
+      |                                                      [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:42:54:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kymax[m[K’ in ‘[01m[Klatest_feedback[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   42 |     int16_t ymax = std::min<int16_t>(latest_feedback.[01;31m[Kymax[m[K, original_resolution.height);
+      |                                                      [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:51:89:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kxcenter[m[K’ in ‘[01m[Klatest_feedback[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   51 |     int16_t xcenter = std::max<int16_t>(half_delta_x, std::min<int16_t>(latest_feedback.[01;31m[Kxcenter[m[K, original_resolution.width-half_delta_x));
+      |                                                                                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:[m[K In constructor ‘[01m[Kneural_network_detector::NNDetector::NNDetector(char*, char*)[m[K’:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:84:14:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+   84 |   pnh_.param<[01;31m[Kint[m[K>("desired_resolution/x", desired_resolution.width, 300);
+      |              [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:85:14:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+   85 |   pnh_.param<[01;31m[Kint[m[K>("desired_resolution/y", desired_resolution.height, 300);
+      |              [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:93:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimeout_[m[K’ was not declared in this scope
+   93 |   [01;31m[Ktimeout_[m[K = ros::Duration(timeout_sec);
+      |   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:93:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+   93 |   timeout_ = [01;31m[Kros[m[K::Duration(timeout_sec);
+      |              [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:106:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ was not declared in this scope; did you mean ‘[01m[Kcos[m[K’?
+  106 |       max_update_rate = std::unique_ptr<[01;31m[Kros[m[K::Rate>(new ros::Rate(update_hz));
+      |                                         [01;31m[K^~~[m[K
+      |                                         [32m[Kcos[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:106:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  106 |       max_update_rate = std::unique_ptr<ros::Rate[01;31m[K>[m[K(new ros::Rate(update_hz));
+      |                                                  [01;31m[K^[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:106:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:106:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type
+  106 |       max_update_rate = std::unique_ptr<ros::Rate>(new [01;31m[Kros[m[K::Rate(update_hz));
+      |                                                        [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:112:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+  112 |   if (!this->connectMultiple([01;31m[Kros[m[K::Rate(0.2), 10)) {
+      |                              [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:113:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+  113 |     [01;31m[Kros[m[K::shutdown();
+      |     [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:123:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetection_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kdetection_info[m[K’?
+  123 |   [01;31m[Kdetection_pub_[m[K = nh_.advertise<NeuralNetworkDetectionArray>(detections_topic, 5);
+      |   [01;31m[K^~~~~~~~~~~~~~[m[K
+      |   [32m[Kdetection_info[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:123:34:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkDetectionArray[m[K’ was not declared in this scope; did you mean ‘[01m[Kneural_network_detector::msg::NeuralNetworkDetectionArray[m[K’?
+  123 |   detection_pub_ = nh_.advertise<[01;31m[KNeuralNetworkDetectionArray[m[K>(detections_topic, 5);
+      |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                  [32m[Kneural_network_detector::msg::NeuralNetworkDetectionArray[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_generator_cpp/neural_network_detector/msg/neural_network_detection_array.hpp:7[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:15[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_generator_cpp/neural_network_detector/msg/detail/neural_network_detection_array__struct.hpp:133:7:[m[K [01;36m[Knote: [m[K‘[01m[Kneural_network_detector::msg::NeuralNetworkDetectionArray[m[K’ declared here
+  133 | using [01;36m[KNeuralNetworkDetectionArray[m[K =
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:123:63:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  123 |   detection_pub_ = nh_.advertise<NeuralNetworkDetectionArray>([01;35m[Kdetections_topic[m[K, 5);
+      |                                                               [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:126:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetection_amount_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kdetection_amount_topic[m[K’?
+  126 |   [01;31m[Kdetection_amount_pub_[m[K = nh_.advertise<NeuralNetworkNumberOfDetections>(detection_amount_topic, 5);
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |   [32m[Kdetection_amount_topic[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:126:41:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkNumberOfDetections[m[K’ was not declared in this scope; did you mean ‘[01m[Kneural_network_detector::msg::NeuralNetworkNumberOfDetections[m[K’?
+  126 |   detection_amount_pub_ = nh_.advertise<[01;31m[KNeuralNetworkNumberOfDetections[m[K>(detection_amount_topic, 5);
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                         [32m[Kneural_network_detector::msg::NeuralNetworkNumberOfDetections[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_generator_cpp/neural_network_detector/msg/neural_network_number_of_detections.hpp:7[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:17[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_generator_cpp/neural_network_detector/msg/detail/neural_network_number_of_detections__struct.hpp:139:7:[m[K [01;36m[Knote: [m[K‘[01m[Kneural_network_detector::msg::NeuralNetworkNumberOfDetections[m[K’ declared here
+  139 | using [01;36m[KNeuralNetworkNumberOfDetections[m[K =
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:126:74:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  126 |   detection_amount_pub_ = nh_.advertise<NeuralNetworkNumberOfDetections>([01;35m[Kdetection_amount_topic[m[K, 5);
+      |                                                                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:132:35:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kimage_transport::ImageTransport::advertise(const char [28], int, boost::_bi::bind_t<void, boost::_mfi::mf0<void, neural_network_detector::NNDetector>, boost::_bi::list1<boost::_bi::value<neural_network_detector::NNDetector*> > >, boost::_bi::bind_t<void, boost::_mfi::mf0<void, neural_network_detector::NNDetector>, boost::_bi::list1<boost::_bi::value<neural_network_detector::NNDetector*> > >, NULL, bool)[m[K’
+  132 |   debug_result_pub_ = [01;31m[Kit.advertise("debug/neural_network/result", 2,[m[K
+      |                       [01;31m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  133 | [01;31m[K                                   boost::bind(&NNDetector::connectCallback, this),[m[K
+      |                                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  134 | [01;31m[K                                   boost::bind(&NNDetector::connectCallback, this), NULL, false)[m[K;
+      |                                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:13[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:120:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::Publisher image_transport::ImageTransport::advertise(const string&, uint32_t, bool)[m[K’
+  120 |   Publisher [01;36m[Kadvertise[m[K(const std::string & base_topic, uint32_t queue_size, bool latch = false);
+      |             [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:120:13:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 6 provided
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:126:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::Publisher image_transport::ImageTransport::advertise(const string&, rmw_qos_profile_t, bool)[m[K’
+  126 |   Publisher [01;36m[Kadvertise[m[K(
+      |             [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:126:13:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 6 provided
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:136:3:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_feedback_[m[K’ was not declared in this scope
+  136 |   [01;31m[Klatest_feedback_[m[K.xcenter = latest_feedback_.ymin = latest_feedback_.ymax = -1;
+      |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:138:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeedback_sub_[m[K’ was not declared in this scope
+  138 |   [01;31m[Kfeedback_sub_[m[K = nh_.subscribe(feedback_topic, 1, &NNDetector::feedbackCallback, this);  // only need the most recent
+      |   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:141:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kimage_transport::ImageTransport::subscribe(std::string&, int, void (neural_network_detector::NNDetector::*)(const int&), neural_network_detector::NNDetector*)[m[K’
+  141 |   img_sub_ = [01;31m[Kit.subscribe(img_topic, 1, &NNDetector::imgCallback,[m[K
+      |              [01;31m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  142 | [01;31m[K                          this)[m[K; // queue of 1, we only want the latest image to be processed
+      |                           [01;31m[K~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:13[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:196:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), T*, const image_transport::TransportHints*)[m[K’
+  196 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:196:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:141:26:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst ImageConstPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’} and ‘[01m[Kconst int[m[K’
+  141 |   img_sub_ = [01;36m[Kit.subscribe(img_topic, 1, &NNDetector::imgCallback,[m[K
+      |              [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  142 | [01;36m[K                          this)[m[K; // queue of 1, we only want the latest image to be processed
+      |                           [01;36m[K~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:13[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:210:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), T*, const image_transport::TransportHints*, rclcpp::SubscriptionOptions)[m[K’
+  210 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:210:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:141:26:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst ImageConstPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’} and ‘[01m[Kconst int[m[K’
+  141 |   img_sub_ = [01;36m[Kit.subscribe(img_topic, 1, &NNDetector::imgCallback,[m[K
+      |              [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  142 | [01;36m[K                          this)[m[K; // queue of 1, we only want the latest image to be processed
+      |                           [01;36m[K~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:13[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:225:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), const std::shared_ptr<_Tp>&, const image_transport::TransportHints*)[m[K’
+  225 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:225:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:141:26:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst ImageConstPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’} and ‘[01m[Kconst int[m[K’
+  141 |   img_sub_ = [01;36m[Kit.subscribe(img_topic, 1, &NNDetector::imgCallback,[m[K
+      |              [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  142 | [01;36m[K                          this)[m[K; // queue of 1, we only want the latest image to be processed
+      |                           [01;36m[K~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:13[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:240:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), const std::shared_ptr<_Tp>&, const image_transport::TransportHints*, rclcpp::SubscriptionOptions)[m[K’
+  240 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:240:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:141:26:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst ImageConstPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’} and ‘[01m[Kconst int[m[K’
+  141 |   img_sub_ = [01;36m[Kit.subscribe(img_topic, 1, &NNDetector::imgCallback,[m[K
+      |              [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  142 | [01;36m[K                          this)[m[K; // queue of 1, we only want the latest image to be processed
+      |                           [01;36m[K~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:13[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:283:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, rmw_qos_profile_t, void (T::*)(const ImageConstPtr&), T*, const image_transport::TransportHints*, rclcpp::SubscriptionOptions)[m[K’
+  283 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:283:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:141:26:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst ImageConstPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’} and ‘[01m[Kconst int[m[K’
+  141 |   img_sub_ = [01;36m[Kit.subscribe(img_topic, 1, &NNDetector::imgCallback,[m[K
+      |              [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  142 | [01;36m[K                          this)[m[K; // queue of 1, we only want the latest image to be processed
+      |                           [01;36m[K~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:13[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:298:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, rmw_qos_profile_t, void (T::*)(const ImageConstPtr&), const std::shared_ptr<_Tp>&, const image_transport::TransportHints*, rclcpp::SubscriptionOptions)[m[K’
+  298 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:298:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:141:26:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst ImageConstPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’} and ‘[01m[Kconst int[m[K’
+  141 |   img_sub_ = [01;36m[Kit.subscribe(img_topic, 1, &NNDetector::imgCallback,[m[K
+      |              [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  142 | [01;36m[K                          this)[m[K; // queue of 1, we only want the latest image to be processed
+      |                           [01;36m[K~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:13[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:144:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, const Callback&, const VoidPtr&, const image_transport::TransportHints*)[m[K’
+  144 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:146:34:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kvoid (neural_network_detector::NNDetector::*)(const int&)[m[K’ to ‘[01m[Kconst Callback&[m[K’ {aka ‘[01m[Kconst std::function<void(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&)>&[m[K’}
+  146 |     [01;36m[Kconst Subscriber::Callback & callback[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:154:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, const Callback&, const VoidPtr&, const image_transport::TransportHints*, rclcpp::SubscriptionOptions)[m[K’
+  154 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:154:14:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 4 provided
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:165:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (*)(const ImageConstPtr&), const image_transport::TransportHints*)[m[K’
+  165 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:167:13:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kvoid (neural_network_detector::NNDetector::*)(const int&)[m[K’ to ‘[01m[Kvoid (*)(const ImageConstPtr&)[m[K’ {aka ‘[01m[Kvoid (*)(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&)[m[K’}
+  167 |     [01;36m[Kvoid (* fp)(const ImageConstPtr &)[m[K,
+      |     [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:180:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (*)(const ImageConstPtr&), const image_transport::TransportHints*, rclcpp::SubscriptionOptions)[m[K’
+  180 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:180:14:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 4 provided
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:256:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, rmw_qos_profile_t, const Callback&, const VoidPtr&, const image_transport::TransportHints*, rclcpp::SubscriptionOptions)[m[K’
+  256 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:256:14:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 4 provided
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:267:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, rmw_qos_profile_t, void (*)(const ImageConstPtr&), const image_transport::TransportHints*, rclcpp::SubscriptionOptions)[m[K’
+  267 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:268:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kint[m[K’ to ‘[01m[Krmw_qos_profile_t[m[K’ {aka ‘[01m[Krmw_qos_profile_s[m[K’}
+  268 |     const std::string & base_topic, [01;36m[Krmw_qos_profile_t custom_qos[m[K,
+      |                                     [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:[m[K At global scope:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:145:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool neural_network_detector::NNDetector::connectMultiple[m[K’ is not a static data member of ‘[01m[Kclass neural_network_detector::NNDetector[m[K’
+  145 | bool [01;31m[KNNDetector[m[K::connectMultiple(ros::Rate sleeper, int tries) {
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:145:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+  145 | bool NNDetector::connectMultiple([01;31m[Kros[m[K::Rate sleeper, int tries) {
+      |                                  [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:145:53:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+  145 | bool NNDetector::connectMultiple(ros::Rate sleeper, [01;31m[Kint[m[K tries) {
+      |                                                     [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:145:62:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in initializer [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  145 | bool NNDetector::connectMultiple(ros::Rate sleeper, int tries[01;31m[K)[m[K {
+      |                                                              [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:8[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:[m[K In member function ‘[01m[Kbool neural_network_detector::NNDetector::connect()[m[K’:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:177:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+  177 |     RCLCPP_WARN([01;31m[Knode[m[K->get_logger(), "Exception: %s", e.what());
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:177:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  177 |     [01;31m[KRCLCPP_WARN[m[K(node->get_logger(), "Exception: %s", e.what());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:177:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  177 |     [01;31m[KRCLCPP_WARN[m[K(node->get_logger(), "Exception: %s", e.what());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:177:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  177 |     [01;31m[KRCLCPP_WARN[m[K(node->get_logger(), "Exception: %s", e.what());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:182:20:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  182 |     max_update_rate[01;31m[K->[m[Kreset();
+      |                    [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:[m[K At global scope:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:187:49:[m[K [01;31m[Kerror: [m[K‘[01m[KImageConstPtr[m[K’ in namespace ‘[01m[Ksensor_msgs[m[K’ does not name a type
+  187 | void NNDetector::imgCallback(const sensor_msgs::[01;31m[KImageConstPtr[m[K &msgp) {
+      |                                                 [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:8[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:[m[K In member function ‘[01m[Kvoid neural_network_detector::NNDetector::imgCallback(const int&)[m[K’:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:190:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+  190 |     RCLCPP_WARN([01;31m[Knode[m[K->get_logger(), "Invalid ImageConstPtr received, not handled.");
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:190:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  190 |     [01;31m[KRCLCPP_WARN[m[K(node->get_logger(), "Invalid ImageConstPtr received, not handled.");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:190:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  190 |     [01;31m[KRCLCPP_WARN[m[K(node->get_logger(), "Invalid ImageConstPtr received, not handled.");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:190:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  190 |     [01;31m[KRCLCPP_WARN[m[K(node->get_logger(), "Invalid ImageConstPtr received, not handled.");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:198:36:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KtoCvShare(const int&, const char [5])[m[K’
+  198 |     mat_img_ = [01;31m[Kcv_bridge::toCvShare(msgp, "bgr8")[m[K->image;
+      |                [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:6[m[K:
+[01m[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:232:34:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv_bridge::CvImageConstPtr cv_bridge::toCvShare(const ConstSharedPtr&, const string&)[m[K’
+  232 | CV_BRIDGE_EXPORT CvImageConstPtr [01;36m[KtoCvShare[m[K(
+      |                                  [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:233:51:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst int[m[K’ to ‘[01m[Kconst ConstSharedPtr&[m[K’ {aka ‘[01m[Kconst std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&[m[K’}
+  233 |   [01;36m[Kconst sensor_msgs::msg::Image::ConstSharedPtr & source[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:260:34:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv_bridge::CvImageConstPtr cv_bridge::toCvShare(const Image&, const std::shared_ptr<const void>&, const string&)[m[K’
+  260 | CV_BRIDGE_EXPORT CvImageConstPtr [01;36m[KtoCvShare[m[K(
+      |                                  [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:154:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst int[m[K’ to ‘[01m[Kconst Image&[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::Image_<std::allocator<void> >&[m[K’}
+  154 |     [01;36m[Kconst sensor_msgs::msg::Image & source[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:209:12:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  209 |     if(msgp[01;31m[K->[m[Kheader.stamp - latest_feedback_.header.stamp > timeout_){
+      |            [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:209:29:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_feedback_[m[K’ was not declared in this scope
+  209 |     if(msgp->header.stamp - [01;31m[Klatest_feedback_[m[K.header.stamp > timeout_){
+      |                             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:209:61:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimeout_[m[K’ was not declared in this scope
+  209 |     if(msgp->header.stamp - latest_feedback_.header.stamp > [01;31m[Ktimeout_[m[K){
+      |                                                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:211:97:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  211 |       ROS_INFO_STREAM_THROTTLE(0.5, "Using whole image because no tracker feedback for " << msgp[01;31m[K->[m[Kheader.stamp - latest_feedback_.header.stamp);
+      |                                                                                                 [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:211:7:[m[K [01;31m[Kerror: [m[K‘[01m[KROS_INFO_STREAM_THROTTLE[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO_STREAM_THROTTLE[m[K’?
+  211 |       [01;31m[KROS_INFO_STREAM_THROTTLE[m[K(0.5, "Using whole image because no tracker feedback for " << msgp->header.stamp - latest_feedback_.header.stamp);
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |       [32m[KRCLCPP_INFO_STREAM_THROTTLE[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:216:42:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_feedback_[m[K’ was not declared in this scope
+  216 |     const auto crop_area = get_crop_area([01;31m[Klatest_feedback_[m[K, original_resolution, desired_resolution, aspect_ratio, proj_crop, timed_out);
+      |                                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:8[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:256:19:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+  256 |       RCLCPP_WARN([01;31m[Knode[m[K->get_logger(), "ALERT! Detection result exceeds buffer!\n");
+      |                   [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:256:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  256 |       [01;31m[KRCLCPP_WARN[m[K(node->get_logger(), "ALERT! Detection result exceeds buffer!\n");
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:256:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  256 |       [01;31m[KRCLCPP_WARN[m[K(node->get_logger(), "ALERT! Detection result exceeds buffer!\n");
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:256:7:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  256 |       [01;31m[KRCLCPP_WARN[m[K(node->get_logger(), "ALERT! Detection result exceeds buffer!\n");
+      |       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:264:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkDetectionArray[m[K’ was not declared in this scope; did you mean ‘[01m[Kneural_network_detector::msg::NeuralNetworkDetectionArray[m[K’?
+  264 |     [01;31m[KNeuralNetworkDetectionArray[m[K detection_array_msg;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kneural_network_detector::msg::NeuralNetworkDetectionArray[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_generator_cpp/neural_network_detector/msg/neural_network_detection_array.hpp:7[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:15[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_generator_cpp/neural_network_detector/msg/detail/neural_network_detection_array__struct.hpp:133:7:[m[K [01;36m[Knote: [m[K‘[01m[Kneural_network_detector::msg::NeuralNetworkDetectionArray[m[K’ declared here
+  133 | using [01;36m[KNeuralNetworkDetectionArray[m[K =
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:267:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetection_array_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Kdetection_results[m[K’?
+  267 |     [01;31m[Kdetection_array_msg[m[K.header.frame_id = msgp->header.frame_id;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kdetection_results[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:267:47:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  267 |     detection_array_msg.header.frame_id = msgp[01;31m[K->[m[Kheader.frame_id;
+      |                                               [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:268:44:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  268 |     detection_array_msg.header.stamp = msgp[01;31m[K->[m[Kheader.stamp;
+      |                                            [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:287:7:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkDetection[m[K’ was not declared in this scope; did you mean ‘[01m[Kneural_network_detector::msg::NeuralNetworkDetection[m[K’?
+  287 |       [01;31m[KNeuralNetworkDetection[m[K detection_msg_;
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |       [32m[Kneural_network_detector::msg::NeuralNetworkDetection[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_generator_cpp/neural_network_detector/msg/neural_network_detection.hpp:7[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:14[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_generator_cpp/neural_network_detector/msg/detail/neural_network_detection__struct.hpp:265:7:[m[K [01;36m[Knote: [m[K‘[01m[Kneural_network_detector::msg::NeuralNetworkDetection[m[K’ declared here
+  265 | using [01;36m[KNeuralNetworkDetection[m[K =
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:288:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetection_msg_[m[K’ was not declared in this scope; did you mean ‘[01m[Kdetection_info[m[K’?
+  288 |       [01;31m[Kdetection_msg_[m[K.header.frame_id = msgp->header.frame_id;
+      |       [01;31m[K^~~~~~~~~~~~~~[m[K
+      |       [32m[Kdetection_info[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:288:44:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  288 |       detection_msg_.header.frame_id = msgp[01;31m[K->[m[Kheader.frame_id;
+      |                                            [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:289:41:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  289 |       detection_msg_.header.stamp = msgp[01;31m[K->[m[Kheader.stamp;
+      |                                         [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:338:22:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  338 |       max_update_rate[01;31m[K->[m[Ksleep();
+      |                      [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:342:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetection_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kdetection_info[m[K’?
+  342 |       [01;31m[Kdetection_pub_[m[K.publish(detection_array_msg);
+      |       [01;31m[K^~~~~~~~~~~~~~[m[K
+      |       [32m[Kdetection_info[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:345:5:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkNumberOfDetections[m[K’ was not declared in this scope; did you mean ‘[01m[Kneural_network_detector::msg::NeuralNetworkNumberOfDetections[m[K’?
+  345 |     [01;31m[KNeuralNetworkNumberOfDetections[m[K amount_msg;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kneural_network_detector::msg::NeuralNetworkNumberOfDetections[m[K
+In file included from [01m[K/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_generator_cpp/neural_network_detector/msg/neural_network_number_of_detections.hpp:7[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:17[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_generator_cpp/neural_network_detector/msg/detail/neural_network_number_of_detections__struct.hpp:139:7:[m[K [01;36m[Knote: [m[K‘[01m[Kneural_network_detector::msg::NeuralNetworkNumberOfDetections[m[K’ declared here
+  139 | using [01;36m[KNeuralNetworkNumberOfDetections[m[K =
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:346:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kamount_msg[m[K’ was not declared in this scope
+  346 |     [01;31m[Kamount_msg[m[K.header.frame_id = msgp->header.frame_id;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:346:38:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  346 |     amount_msg.header.frame_id = msgp[01;31m[K->[m[Kheader.frame_id;
+      |                                      [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:347:35:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  347 |     amount_msg.header.stamp = msgp[01;31m[K->[m[Kheader.stamp;
+      |                                   [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:349:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetection_amount_pub_[m[K’ was not declared in this scope
+  349 |     [01;31m[Kdetection_amount_pub_[m[K.publish(amount_msg);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:370:7:[m[K [01;31m[Kerror: [m[K‘[01m[KROS_WARN_THROTTLE[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_WARN_THROTTLE[m[K’?
+  370 |       [01;31m[KROS_WARN_THROTTLE[m[K(5, "Debug information on topic %s is active due to having at least 1 subscriber",
+      |       [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |       [32m[KRCLCPP_WARN_THROTTLE[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:374:56:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  374 |       debug_result_pub_.publish(cv_bridge::CvImage(msgp[01;31m[K->[m[Kheader, "bgr8", small_img).toImageMsg());
+      |                                                        [01;31m[K^~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:8[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:378:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+  378 |     RCLCPP_WARN([01;31m[Knode[m[K->get_logger(), "Exception: %s", e.what());
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:378:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  378 |     [01;31m[KRCLCPP_WARN[m[K(node->get_logger(), "Exception: %s", e.what());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:378:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  378 |     [01;31m[KRCLCPP_WARN[m[K(node->get_logger(), "Exception: %s", e.what());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:378:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  378 |     [01;31m[KRCLCPP_WARN[m[K(node->get_logger(), "Exception: %s", e.what());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:379:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+  379 |     RCLCPP_INFO([01;31m[Knode[m[K->get_logger(), "Creating new TCP client");
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:379:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  379 |     [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "Creating new TCP client");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:379:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  379 |     [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "Creating new TCP client");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:379:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  379 |     [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "Creating new TCP client");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:385:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+  385 |     if (!this->connectMultiple([01;31m[Kros[m[K::Rate(0.2), 100)) {
+      |                                [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:386:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+  386 |       [01;31m[Kros[m[K::shutdown();
+      |       [01;31m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/include/neural_network_detector/NNDetector.h:8[m[K,
+                 from [01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:5[m[K:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:[m[K In member function ‘[01m[Kvoid neural_network_detector::NNDetector::connectCallback()[m[K’:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:395:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+  395 |     RCLCPP_INFO([01;31m[Knode[m[K->get_logger(), "At least one client is connected to debug topic");
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:395:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  395 |     [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "At least one client is connected to debug topic");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:395:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  395 |     [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "At least one client is connected to debug topic");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:395:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  395 |     [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "At least one client is connected to debug topic");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:397:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+  397 |     RCLCPP_INFO([01;31m[Knode[m[K->get_logger(), "Clients disconnected from debug topic - stopping debug");
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:397:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  397 |     [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "Clients disconnected from debug topic - stopping debug");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:397:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  397 |     [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "Clients disconnected from debug topic - stopping debug");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:397:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  397 |     [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "Clients disconnected from debug topic - stopping debug");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:[m[K At global scope:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:400:66:[m[K [01;31m[Kerror: [m[K‘[01m[KNeuralNetworkFeedbackConstPtr[m[K’ in namespace ‘[01m[Kneural_network_detector[m[K’ does not name a type
+  400 | void NNDetector::feedbackCallback(const neural_network_detector::[01;31m[KNeuralNetworkFeedbackConstPtr[m[K &msg) {
+      |                                                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:[m[K In member function ‘[01m[Kvoid neural_network_detector::NNDetector::feedbackCallback(const int&)[m[K’:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:401:3:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_feedback_[m[K’ was not declared in this scope
+  401 |   [01;31m[Klatest_feedback_[m[K = *msg;
+      |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:401:22:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kint[m[K’)
+  401 |   latest_feedback_ = [01;31m[K*msg[m[K;
+      |                      [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/neural_network_detector_node.dir/build.make:76: CMakeFiles/neural_network_detector_node.dir/src/neural_network_detector_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:656: CMakeFiles/neural_network_detector_node.dir/all] Error 2
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:[m[K In function ‘[01m[Kcv::Rect neural_network_detector::get_crop_area(const int&, const Size2i&, const Size2i&, float, cv::projection2i&, bool)[m[K’:
+[01m[K/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector/src/NNDetector.cpp:67:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   67 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+gmake[2]: *** [CMakeFiles/NNDetector.dir/build.make:76: CMakeFiles/NNDetector.dir/src/NNDetector.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:600: CMakeFiles/NNDetector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

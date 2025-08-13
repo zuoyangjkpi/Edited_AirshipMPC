@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from neural_network_detector/msg/NeuralNetworkDetectionArray.msg
+// generated code does not contain a copyright notice
+
+#include "neural_network_detector/msg/NeuralNetworkDetection.idl"
+#include "std_msgs/msg/Header.idl"
+
+module neural_network_detector {
+  module msg {
+    struct NeuralNetworkDetectionArray {
+      std_msgs::msg::Header header;
+
+      sequence<neural_network_detector::msg::NeuralNetworkDetection> detections;
+    };
+  };
+};

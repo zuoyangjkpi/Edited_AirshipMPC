@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/neural_network_detector_node" "TARGETS" "neural_network_detector_node" "DESTINATION" "lib/neural_network_detector")

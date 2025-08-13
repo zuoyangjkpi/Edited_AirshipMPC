@@ -1,0 +1,4 @@
+/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_adapter/neural_network_detector:msg/NeuralNetworkDetection.idl
+/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_adapter/neural_network_detector:msg/NeuralNetworkDetectionArray.idl
+/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_adapter/neural_network_detector:msg/NeuralNetworkFeedback.idl
+/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/rosidl_adapter/neural_network_detector:msg/NeuralNetworkNumberOfDetections.idl

@@ -1,0 +1,269 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-4a1f8163c48f91923f30.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21
+					]
+				},
+				{
+					"build" : "neural_network_detector__py",
+					"jsonFile" : "directory-neural_network_detector__py-Release-d1cedaf05cceaf71e9a8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector/neural_network_detector__py",
+					"targetIndexes" : 
+					[
+						6
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "neural_network_detector",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "NNDetector::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NNDetector-Release-b35897c329c8b923ccbc.json",
+					"name" : "NNDetector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Overlay::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Overlay-Release-6eb9f07fe573ce067af0.json",
+					"name" : "Overlay",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_neural_network_detector_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_neural_network_detector_egg-Release-2c3fdabf8e231dc5450b.json",
+					"name" : "ament_cmake_python_build_neural_network_detector_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_neural_network_detector::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_neural_network_detector-Release-3a202e91cf340a3084d4.json",
+					"name" : "ament_cmake_python_symlink_neural_network_detector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "neural_network_detector::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-neural_network_detector-Release-83a70211970a1427e9bb.json",
+					"name" : "neural_network_detector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "neural_network_detector__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-neural_network_detector__cpp-Release-510ee57a632ea2fcc2d0.json",
+					"name" : "neural_network_detector__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "neural_network_detector__py::@eb6f0139ab78869b7f2f",
+					"jsonFile" : "target-neural_network_detector__py-Release-4e3186208f9077642b22.json",
+					"name" : "neural_network_detector__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "neural_network_detector__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-neural_network_detector__rosidl_generator_c-Release-35db9783c42cac3546fa.json",
+					"name" : "neural_network_detector__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "neural_network_detector__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-neural_network_detector__rosidl_generator_py-Release-39425799bd04144c1524.json",
+					"name" : "neural_network_detector__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "neural_network_detector__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-neural_network_detector__rosidl_typesupport_c-Release-046570f95aca5e6db01d.json",
+					"name" : "neural_network_detector__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "neural_network_detector__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-neural_network_detector__rosidl_typesupport_c__pyext-Release-48f6a49e74a120d521db.json",
+					"name" : "neural_network_detector__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "neural_network_detector__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-neural_network_detector__rosidl_typesupport_cpp-Release-8ae4d76d5319242ce3b1.json",
+					"name" : "neural_network_detector__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "neural_network_detector__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-neural_network_detector__rosidl_typesupport_fastrtps_c-Release-b9662a4d5b60d62ce1c0.json",
+					"name" : "neural_network_detector__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "neural_network_detector__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-neural_network_detector__rosidl_typesupport_fastrtps_c__pyext-Release-32d041bf2b4159cae0c5.json",
+					"name" : "neural_network_detector__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "neural_network_detector__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-neural_network_detector__rosidl_typesupport_fastrtps_cpp-Release-ac12b0d811f0475364d3.json",
+					"name" : "neural_network_detector__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "neural_network_detector__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-neural_network_detector__rosidl_typesupport_introspection_c-Release-2a3c7a3b26184d22858b.json",
+					"name" : "neural_network_detector__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "neural_network_detector__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-neural_network_detector__rosidl_typesupport_introspection_c__pyext-Release-58dec4b2637f38387b47.json",
+					"name" : "neural_network_detector__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "neural_network_detector__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-neural_network_detector__rosidl_typesupport_introspection_cpp-Release-0b9aa296083b61b30379.json",
+					"name" : "neural_network_detector__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "neural_network_detector_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-neural_network_detector_node-Release-562225f9f2381ccefb13.json",
+					"name" : "neural_network_detector_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "neural_network_detector_overlay_only::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-neural_network_detector_overlay_only-Release-3f1188727543a9a1b2f9.json",
+					"name" : "neural_network_detector_overlay_only",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "neural_network_detector_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-neural_network_detector_uninstall-Release-a470fd4485d152636034.json",
+					"name" : "neural_network_detector_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-d0155d8afebd9a31296f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/Edited_AirshipMPC/build/neural_network_detector",
+		"source" : "/home/ubuntu/Edited_AirshipMPC/submodules/AirCap/packages/flight/neural_network_detector"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

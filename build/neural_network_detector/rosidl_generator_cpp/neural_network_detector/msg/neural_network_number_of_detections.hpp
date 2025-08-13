@@ -1,0 +1,12 @@
+// generated from rosidl_generator_cpp/resource/idl.hpp.em
+// generated code does not contain a copyright notice
+
+#ifndef NEURAL_NETWORK_DETECTOR__MSG__NEURAL_NETWORK_NUMBER_OF_DETECTIONS_HPP_
+#define NEURAL_NETWORK_DETECTOR__MSG__NEURAL_NETWORK_NUMBER_OF_DETECTIONS_HPP_
+
+#include "neural_network_detector/msg/detail/neural_network_number_of_detections__struct.hpp"
+#include "neural_network_detector/msg/detail/neural_network_number_of_detections__builder.hpp"
+#include "neural_network_detector/msg/detail/neural_network_number_of_detections__traits.hpp"
+#include "neural_network_detector/msg/detail/neural_network_number_of_detections__type_support.hpp"
+
+#endif  // NEURAL_NETWORK_DETECTOR__MSG__NEURAL_NETWORK_NUMBER_OF_DETECTIONS_HPP_

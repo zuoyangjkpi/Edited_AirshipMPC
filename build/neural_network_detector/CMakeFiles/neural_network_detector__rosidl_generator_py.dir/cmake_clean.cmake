@@ -1,0 +1,17 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/neural_network_detector__rosidl_generator_py.dir/rosidl_generator_py/neural_network_detector/msg/_neural_network_detection_array_s.c.o"
+  "CMakeFiles/neural_network_detector__rosidl_generator_py.dir/rosidl_generator_py/neural_network_detector/msg/_neural_network_detection_array_s.c.o.d"
+  "CMakeFiles/neural_network_detector__rosidl_generator_py.dir/rosidl_generator_py/neural_network_detector/msg/_neural_network_detection_s.c.o"
+  "CMakeFiles/neural_network_detector__rosidl_generator_py.dir/rosidl_generator_py/neural_network_detector/msg/_neural_network_detection_s.c.o.d"
+  "CMakeFiles/neural_network_detector__rosidl_generator_py.dir/rosidl_generator_py/neural_network_detector/msg/_neural_network_feedback_s.c.o"
+  "CMakeFiles/neural_network_detector__rosidl_generator_py.dir/rosidl_generator_py/neural_network_detector/msg/_neural_network_feedback_s.c.o.d"
+  "CMakeFiles/neural_network_detector__rosidl_generator_py.dir/rosidl_generator_py/neural_network_detector/msg/_neural_network_number_of_detections_s.c.o"
+  "CMakeFiles/neural_network_detector__rosidl_generator_py.dir/rosidl_generator_py/neural_network_detector/msg/_neural_network_number_of_detections_s.c.o.d"
+  "rosidl_generator_py/neural_network_detector/libneural_network_detector__rosidl_generator_py.pdb"
+  "rosidl_generator_py/neural_network_detector/libneural_network_detector__rosidl_generator_py.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/neural_network_detector__rosidl_generator_py.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
