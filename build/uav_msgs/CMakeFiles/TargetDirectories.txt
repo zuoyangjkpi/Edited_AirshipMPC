@@ -1,0 +1,9 @@
+/home/ubuntu/Edited_AirshipMPC/build/uav_msgs/CMakeFiles/uninstall.dir
+/home/ubuntu/Edited_AirshipMPC/build/uav_msgs/CMakeFiles/uav_msgs_uninstall.dir
+/home/ubuntu/Edited_AirshipMPC/build/uav_msgs/CMakeFiles/test.dir
+/home/ubuntu/Edited_AirshipMPC/build/uav_msgs/CMakeFiles/edit_cache.dir
+/home/ubuntu/Edited_AirshipMPC/build/uav_msgs/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/Edited_AirshipMPC/build/uav_msgs/CMakeFiles/list_install_components.dir
+/home/ubuntu/Edited_AirshipMPC/build/uav_msgs/CMakeFiles/install.dir
+/home/ubuntu/Edited_AirshipMPC/build/uav_msgs/CMakeFiles/install/local.dir
+/home/ubuntu/Edited_AirshipMPC/build/uav_msgs/CMakeFiles/install/strip.dir

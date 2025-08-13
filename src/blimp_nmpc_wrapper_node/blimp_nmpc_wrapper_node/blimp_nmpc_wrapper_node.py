@@ -685,3 +685,21 @@ if __name__ == '__main__':
     windpub = rospy.Publisher(WINDTOPIC,PointStamped,queue_size=3)
     rclpy.spin(node)
     
+
+def main():
+    """Main entry point for the ROS2 node"""
+    rclpy.init()
+    node = rclpy.create_node('blimp_nmpc_wrapper_node')
+    
+    try:
+        # Initialize subscribers and publishers here
+        # (The existing code should be refactored into this main function)
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()

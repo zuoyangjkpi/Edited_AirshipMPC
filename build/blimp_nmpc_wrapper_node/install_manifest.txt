@@ -1,3 +1,0 @@
-/home/ubuntu/Edited_AirshipMPC/install/blimp_nmpc_wrapper_node/share/blimp_nmpc_wrapper_node/launch/one_blimp.launch.py
-/home/ubuntu/Edited_AirshipMPC/install/blimp_nmpc_wrapper_node/share/blimp_nmpc_wrapper_node/nodes/blimp_nmpc_wrapper_node.py
-/home/ubuntu/Edited_AirshipMPC/install/blimp_nmpc_wrapper_node/share/blimp_nmpc_wrapper_node/nodes/formation_config.py

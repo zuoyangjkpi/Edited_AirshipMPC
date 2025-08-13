@@ -1,8 +1,0 @@
-setup.py
-blimp_nmpc_wrapper_node/__init__.py
-blimp_nmpc_wrapper_node/blimp_nmpc_wrapper_node.py
-blimp_nmpc_wrapper_node/formation_config.py
-blimp_nmpc_wrapper_node.egg-info/PKG-INFO
-blimp_nmpc_wrapper_node.egg-info/SOURCES.txt
-blimp_nmpc_wrapper_node.egg-info/dependency_links.txt
-blimp_nmpc_wrapper_node.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+source;share/aircap/local_setup.bash
+source;share/aircap/local_setup.dsv
+source;share/aircap/local_setup.sh
+source;share/aircap/local_setup.zsh
