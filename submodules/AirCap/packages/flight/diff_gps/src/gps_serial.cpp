@@ -1,4 +1,5 @@
 // based on the example https://github.com/garyservin/serial-example/blob/master/src/serial_example_node.cpp
+// Converted to ROS2
 
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/string.hpp>
@@ -7,9 +8,7 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-
-
-
+#include <memory>
 
 // extracting double value from a string
 void extract_value(std::string& sdata, double& value)
@@ -20,6 +19,7 @@ void extract_value(std::string& sdata, double& value)
 
     return;
 }
+
 // transforming received deviation values to the appropriate values in covariance matrix
 void transform_sdvalue(double& val)
 {
@@ -28,6 +28,7 @@ void transform_sdvalue(double& val)
     else
         val = val*val;
 }
+
 // parser for GPS data, ENU format expected
 // format of the serial input described on the page 102 of
 // http://www.rtklib.com/prog/manual_2.4.2.pdf
@@ -80,96 +81,91 @@ void parse_GPS(std::string& gps, std::string& t_stamp,double& east, double& nort
 
 int main (int argc, char** argv)
 {
-
-    ros::init(argc, argv, "gps_serial");
-    ros::NodeHandle nh("~");
+    rclcpp::init(argc, argv);
+    auto node = rclcpp::Node::make_shared("gps_serial");
+    
     std::string device_name{"/dev/stdin"};
     std::string gps_topic{"gpspose"};
-    nh.getParam("device_name", device_name);
-    nh.getParam("gps_topic", gps_topic);
-    ros::Publisher pose_pub = nh.advertise<geometry_msgs::PoseWithCovarianceStamped>(gps_topic, 5);
+    
+    // Declare and get parameters
+    node->declare_parameter("device_name", device_name);
+    node->declare_parameter("gps_topic", gps_topic);
+    node->get_parameter("device_name", device_name);
+    node->get_parameter("gps_topic", gps_topic);
+    
+    auto pose_pub = node->create_publisher<geometry_msgs::msg::PoseWithCovarianceStamped>(gps_topic, 5);
+    
     double east,north,up;
     double covariance[36];
     // initializing covariance matrix with zeros
     for (int k=0;k<36;k++)
         covariance[k] = 0;
+    
     // setting loop rate to 5 Hz
-    std::uint32_t my_seq = 0;
+    rclcpp::Rate rate(5);
     std::ifstream myfile (device_name);
 
-
-
-
-    while(ros::ok())
+    while(rclcpp::ok())
     {
-
-        ros::spinOnce();
+        rclcpp::spin_some(node);
+        
         if (myfile.is_open())
-          {
-//        if(ser.available())
-//        {
-            // ROS_INFO_STREAM("Reading from serial port \n");
-            std_msgs::String gps;
-            geometry_msgs::PoseWithCovarianceStamped msg;
+        {
+            std_msgs::msg::String gps;
+            geometry_msgs::msg::PoseWithCovarianceStamped msg;
             std::string t_stamp;
-            // reading from serial port
-            // time stamp
-
-            // ser.readline(gps.data,65536,"\n");
+            
+            // reading from file/device
             if (!std::getline(myfile,gps.data)) {
                 myfile.close();
-
-                ROS_ERROR_STREAM("end of file");
-                ros::shutdown();
+                RCLCPP_ERROR(node->get_logger(), "end of file");
+                rclcpp::shutdown();
                 return -1;
-
             }
-            msg.header.stamp = ros::Time::now();
-            // measure time ros
+            
+            msg.header.stamp = node->get_clock()->now();
+            
             // parsing GPS information
-
             if (gps.data.substr(0,1)!="%" && gps.data.size()>140)
             {
-                //ROS_INFO_STREAM(gps.data);
+                //RCLCPP_INFO(node->get_logger(), "%s", gps.data.c_str());
                 parse_GPS(gps.data,t_stamp,east,north,up,covariance);
+                
                 // forming a ros message with parsed GPS data in ENU format, converted up to down
-
-                // sequence of IDs
-                msg.header.seq = my_seq;
-                my_seq++;
-                // 1 = global frame
+                // Note: ROS2 doesn't have header.seq, it's automatically handled
                 msg.header.frame_id = "world";
+                
                 // adding position, converting to actual north east down coordinates
                 msg.pose.pose.position.x = north;
                 msg.pose.pose.position.y = east;
                 msg.pose.pose.position.z = -up;
+                
                 // adding orientation
                 msg.pose.pose.orientation.x = 0;
                 msg.pose.pose.orientation.y = 0;
                 msg.pose.pose.orientation.z = 0;
                 msg.pose.pose.orientation.w = 1;
+                
                 // filling the covariance matrix
                 for (int k=0;k<36;k++)
                     msg.pose.covariance[k]=covariance[k];
+                
                 // publishing the message
-                pose_pub.publish(msg);
-
-
+                pose_pub->publish(msg);
             } else {
-                ROS_INFO_STREAM("ignoring data line");
-	    }
+                RCLCPP_INFO(node->get_logger(), "ignoring data line");
+            }
         }
         else {
-                ROS_ERROR_STREAM("unable to open file");
-                ros::shutdown();
-                return -1;
-	}
-
-
-
+            RCLCPP_ERROR(node->get_logger(), "unable to open file");
+            rclcpp::shutdown();
+            return -1;
+        }
+        
+        rate.sleep();
     }
-
+    
+    rclcpp::shutdown();
+    return 0;
 }
-
-
 
