@@ -9,7 +9,7 @@
 # NOTE: To include complete covariance information, a float32[100] Covariance (10x10 matrix) would be needed as well. Transferring that with every update might limit bandwidth significantly.
 
 
-Header header
+std_msgs/Header header
 geometry_msgs/Point position
 geometry_msgs/Point velocity
 geometry_msgs/Quaternion orientation  
@@ -17,4 +17,4 @@ float64[100] covariance
 geometry_msgs/Point ang_velocity
 float64 thrust
 int32 flightmode
-geometry_msgs/Point POI
+geometry_msgs/Point poi

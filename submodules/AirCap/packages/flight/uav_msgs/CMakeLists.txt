@@ -13,7 +13,7 @@ find_package(nav_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/uav_pose.msg"
+  "msg/UavPose.msg"
   DEPENDENCIES std_msgs nav_msgs geometry_msgs
 )
 
