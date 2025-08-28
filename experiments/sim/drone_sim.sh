@@ -1,123 +1,179 @@
 #!/bin/bash
-# Spawn DRONES (Firefly) instead of BLIMPS, based on your second script.
 
-# 0) Ensure workspace is built
+# Fixed drone simulation script with RViz and proper tracking
+# Addresses: 1) RViz not launching 2) Drone not tracking person
+
+# Check if workspace is built
 if [ ! -e ../../catkin_ws/devel/setup.bash ]; then
-  echo "Please Install requirements first"
-  exit 1
+    echo "Please Install requirements first"
+    exit 1
 fi
+
 source ../../catkin_ws/devel/setup.bash
 
-# 1) Args
-ROBOS=$1                 # <number of drones>
-COMSUCCESSRATE=$2        # <communication success rate>
-NAME=$3                  # <experiment title / tag>
-WORLD=$4                 # <world_name>
+# Parse arguments
+ROBOS=$1                 # number of drones
+COMSUCCESSRATE=$2        # communication success rate
+NAME=$3                  # experiment title
+WORLD=$4                 # world name
 
-# Defaults (following the second script style)
+# Set defaults
 if [ -z "$COMSUCCESSRATE" ]; then
-  COMSUCCESSRATE=100
-fi
-if [ -z "$NAME" ]; then
-  NAME="gazebo_flight_$(date +%s)"
-fi
-if [ -z "$WORLD" ]; then
-  WORLD="arena_RAL"
+    COMSUCCESSRATE=100
 fi
 
-# 2) Positions (like the second script; plenty of spawn points)
+if [ -z "$NAME" ]; then
+    NAME="drone_flight_$(date +%s)"
+fi
+
+if [ -z "$WORLD" ]; then
+    WORLD="arena_RAL"
+fi
+
+# Spawn positions (same as setup_mavocap_gazebo.sh)
 Xs=(-15 -10 -8 -6 -4 5 0 2 4 6 8 10 15)
 Ys=(-15 -10 -8 -6 -4 5 0 2 4 6 8 10 15)
 
-# 3) Usage
+# Usage check
 if [ $# -lt 1 ]; then
-  echo "usage: $0 <number of robots> <communication success rate> <experiment title> <world_name>"
-  exit 1
+    echo "usage: $0 <number of drones> [communication success rate] [experiment title] [world_name]"
+    echo "example: $0 1"
+    echo "example: $0 3 100 test_flight arena_RAL"
+    exit 1
 fi
 
-# 4) (Optional) Logging stubs
-# LOGPATH="/media/ssd/RECORD"
-# LOGFILE=$( echo ${LOGPATH}/${NAME}*.bag )
-# if [ -e $LOGFILE ]; then
-#   echo "Experiment result exists, exiting"
-#   exit 0
-# fi
+echo "Starting drone simulation with $ROBOS drone(s)..."
 
-# 5) Bringup world
-echo "Launching Gazebo..."
+# 1. Launch Gazebo world
+echo "Step 1: Launching Gazebo world: $WORLD..."
 screen -d -m -S GAZEBO bash -i -c "source ../../catkin_ws/devel/setup.bash; roslaunch rotors_gazebo world.launch world_name:=$WORLD --screen"
-sleep 10
+sleep 12
 
-# (RViz step removed to avoid blimp-specific config; add your own RViz config if needed.)
+# 2. Launch RViz with appropriate config
+echo "Step 2: Launching RViz..."
+if [ -f "../../submodules/AirCap/packages/optional/gcs_visualization/config/2machines.rviz" ]; then
+    RVIZ_CONFIG="../../submodules/AirCap/packages/optional/gcs_visualization/config/2machines.rviz"
+elif [ -f "../../submodules/AirCap/packages/3rdparty/airship_simulation/blimp_description/rviz/3_blimp_nmpc.rviz" ]; then
+    RVIZ_CONFIG="../../submodules/AirCap/packages/3rdparty/airship_simulation/blimp_description/rviz/3_blimp_nmpc.rviz"
+else
+    RVIZ_CONFIG=""
+fi
 
-# 6) Peripherals
-echo "Starting Deep Neural Network Server..."
-screen -d -m -S SSDSERVER bash -i -c "./ssd_server.sh 0"
+if [ -n "$RVIZ_CONFIG" ]; then
+    screen -d -m -S RVIZ bash -i -c "source ../../catkin_ws/devel/setup.bash; rviz -d $RVIZ_CONFIG"
+    echo "RViz launched with config: $RVIZ_CONFIG"
+else
+    screen -d -m -S RVIZ bash -i -c "source ../../catkin_ws/devel/setup.bash; rviz"
+    echo "RViz launched with default config"
+fi
 sleep 5
 
-echo "Starting GCS Visualization framework..."
+# 3. Start Deep Neural Network Server for person detection
+echo "Step 3: Starting Deep Neural Network Server..."
+screen -d -m -S SSDSERVER bash -i -c "source ../../catkin_ws/devel/setup.bash; cd ../../submodules/AirCap/scripts/simulation/; ./ssd_server.sh 0"
+sleep 8
+
+# 4. Start GCS Visualization framework
+echo "Step 4: Starting GCS Visualization framework..."
 screen -d -m -S GCSVIS bash -i -c "source ../../catkin_ws/devel/setup.bash; rosrun gcs_visualization gcs_visualization_node $ROBOS 30 1 0 arrow 8"
 sleep 3
 
-# 7) Target spawner
-echo "Spawning target"
+# 5. Spawn target (person to track)
+echo "Step 5: Spawning target person..."
 screen -d -m -S TARGET bash -i -c "source ../../catkin_ws/devel/setup.bash; roslaunch random_moving_target spawn_target_withID.launch joyDevName:=0 directUseForFormation:=true --screen"
+sleep 5
 
-# 8) Spawn drones + AIRCAP per robot
+# 6. Spawn drones and start AirCap for each
 for i in $(seq 0 $(($ROBOS-1))); do
-  id=$((i+1))
-  echo "Launching drone $id..."
-  screen -d -m -S FIREFLY$id bash -i -c "source ../../catkin_ws/devel/setup.bash; roslaunch rotors_gazebo mav_with_joy_and_ID.launch roboID:=$id Z:=8 X:=${Xs[$i]} Y:=${Ys[$i]} --screen"
-  sleep 5
+    id=$((i+1))
+    
+    echo "Step 6.$i: Launching drone $id at position (${Xs[$i]}, ${Ys[$i]}, 8)..."
+    screen -d -m -S FIREFLY$id bash -i -c "source ../../catkin_ws/devel/setup.bash; roslaunch rotors_gazebo mav_with_joy_and_ID.launch roboID:=$id Z:=8 X:=${Xs[$i]} Y:=${Ys[$i]} --screen"
+    sleep 8
 
-  echo "Starting AIRCAP for drone $id"
-  screen -d -m -S AIRCAP$id bash -i -c "source ../../catkin_ws/devel/setup.bash; roslaunch aircap simulation.launch robotID:=$id numRobots:=$ROBOS comSuccessRate:=$COMSUCCESSRATE --screen"
-  sleep 1
+    echo "Step 6.$i: Starting AirCap tracking for drone $id..."
+    screen -d -m -S AIRCAP$id bash -i -c "source ../../catkin_ws/devel/setup.bash; roslaunch aircap simulation.launch robotID:=$id numRobots:=$ROBOS comSuccessRate:=$COMSUCCESSRATE --screen"
+    sleep 3
 done
 
-# 9) Quick health check (same topics as before)
-echo "Checking robot status"
-result=1
-for i in $(seq 0 $(($ROBOS-1))); do
-  id=$((i+1))
-  x=$( timeout 10 rostopic echo /machine_$id/pose/position/x | head -n 1 )
-  y=$( timeout 10 rostopic echo /machine_$id/pose/position/y | head -n 1 )
-  z=$( timeout 10 rostopic echo /machine_$id/pose/position/z | head -n 1 )
-  if [ -z "$x" ] || [ -z "$y" ] || [ -z "$z" ]; then
-    result=0; break
-  fi
-  # Within bounds (fixing the copy-paste bug on y)
-  if [ ! \( $( echo "$z<-3.0"  | bc ) = 1 -a $( echo "$z>-20.0" | bc ) = 1 \) ]; then
-    result=0; break
-  fi
-  if [ ! \( $( echo "$x>-20.0" | bc ) = 1 -a $( echo "$x<20.0"  | bc ) = 1 \) ]; then
-    result=0; break
-  fi
-  if [ ! \( $( echo "$y>-20.0" | bc ) = 1 -a $( echo "$y<20.0"  | bc ) = 1 \) ]; then
-    result=0; break
-  fi
-done
-# (If you want to hard-fail on result=0, uncomment the block below)
-# if [ $result = 0 ]; then
-#   echo "A robot failed to initialize - cleaning up"
-#   ./cleanup.sh
-#   exit 1
-# fi
+# 7. Wait for systems to initialize
+echo "Step 7: Waiting for complete system initialization..."
+sleep 15
 
-# 10) Wait for systems to come up
-echo "Waiting 20 seconds for everyone to come up"
-timeout 400 ./rossleep.py 20
-result=$?
-if [ $result = 124 ]; then
-  echo "Something went wrong, timeout!"
-  ./cleanup.sh
-  exit 1
+# 8. Check system status
+echo "Step 8: Checking system status..."
+
+# Check if ROS master is running
+if ! rostopic list >/dev/null 2>&1; then
+    echo "ERROR: ROS master not running!"
+    exit 1
 fi
 
-# 11) (Optional) rosbag
-# echo "Starting recording..."
-# screen -d -m -S ROSBAG bash -i -c "rosbag record -o ${LOGPATH}/${NAME}.bag $( cat bagtopics.txt | tr '\n' ' ' )"
+# Check if target is spawned
+if rostopic list | grep -q "target"; then
+    echo "✓ Target topics found"
+else
+    echo "⚠ Warning: Target topics not found"
+fi
+
+# Check drone status
+result=1
+for i in $(seq 0 $(($ROBOS-1))); do
+    id=$((i+1))
+    echo "Checking drone $id..."
+    
+    # Check if drone topics exist
+    if rostopic list | grep -q "/machine_$id"; then
+        echo "✓ Drone $id topics found"
+    else
+        echo "⚠ Warning: Drone $id topics not found"
+        result=0
+    fi
+    
+    # Check if tracking topics exist
+    if rostopic list | grep -q "/machine_$id/target_tracker"; then
+        echo "✓ Drone $id tracking topics found"
+    else
+        echo "⚠ Warning: Drone $id tracking topics not found"
+    fi
+done
+
+# 9. Show important topics for debugging
+echo ""
+echo "Step 9: Important topics for monitoring:"
+echo "Target topics:"
+rostopic list | grep target | head -5
+echo ""
+echo "Machine topics:"
+rostopic list | grep machine | head -10
+echo ""
+echo "Detection topics:"
+rostopic list | grep detection | head -5
+
+# 10. Final status
+echo ""
+echo "=========================================="
+echo "Drone simulation setup complete!"
+echo "=========================================="
+echo "Number of drones: $ROBOS"
+echo "World: $WORLD"
+echo "Communication success rate: $COMSUCCESSRATE%"
+echo ""
+echo "RViz should be open for visualization"
+echo "Gazebo shows the simulation world"
+echo ""
+echo "To monitor tracking:"
+echo "  rostopic echo /machine_1/target_tracker/pose"
+echo "  rostopic echo /machine_1/command"
+echo ""
+echo "To stop simulation:"
+echo "  ./cleanup.sh"
+echo ""
+echo "Active screen sessions:"
+screen -ls
+echo ""
 
 date
-echo "execute ./cleanup.sh to exit simulation"
 exit 0
+
+
